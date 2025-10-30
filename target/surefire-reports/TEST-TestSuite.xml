@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="575.908" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/abcom/Documents/projects/ProdigyBaby/target/test-classes:/Users/abcom/Documents/projects/ProdigyBaby/target/classes:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-api/4.11.0/selenium-api-4.11.0.jar:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.11.0/selenium-remote-driver-4.11.0.jar:/Users/abcom/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/abcom/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/abcom/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/abcom/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/abcom/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/abcom/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/abcom/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/abcom/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/abcom/.m2/repository/io/netty/netty-buffer/4.1.92.Final/netty-buffer-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-codec-http/4.1.92.Final/netty-codec-http-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-codec/4.1.92.Final/netty-codec-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-handler/4.1.92.Final/netty-handler-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.92.Final/netty-transport-classes-epoll-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.92.Final/netty-transport-classes-kqueue-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-native-epoll/4.1.92.Final/netty-transport-native-epoll-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.92.Final/netty-transport-native-kqueue-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.92.Final/netty-transport-native-unix-common-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport/4.1.92.Final/netty-transport-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-resolver/4.1.92.Final/netty-resolver-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-api/1.26.0/opentelemetry-api-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-context/1.26.0/opentelemetry-context-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.26.0/opentelemetry-exporter-logging-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.26.0/opentelemetry-sdk-metrics-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.26.0-alpha/opentelemetry-extension-incubator-1.26.0-alpha.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.26.0-alpha/opentelemetry-sdk-logs-1.26.0-alpha.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.26.0-alpha/opentelemetry-api-logs-1.26.0-alpha.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.26.0-alpha/opentelemetry-api-events-1.26.0-alpha.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.26.0/opentelemetry-sdk-common-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.26.0/opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.26.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.26.0/opentelemetry-sdk-trace-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.26.0/opentelemetry-sdk-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.26.0-alpha/opentelemetry-semconv-1.26.0-alpha.jar:/Users/abcom/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/abcom/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/abcom/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/abcom/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/abcom/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/abcom/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/abcom/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/abcom/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-http/4.11.0/selenium-http-4.11.0.jar:/Users/abcom/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-json/4.11.0/selenium-json-4.11.0.jar:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.11.0/selenium-manager-4.11.0.jar:/Users/abcom/.m2/repository/io/appium/java-client/8.5.1/java-client-8.5.1.jar:/Users/abcom/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/abcom/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/abcom/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/abcom/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/abcom/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/abcom/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/abcom/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/abcom/.m2/repository/commons-io/commons-io/2.12.0/commons-io-2.12.0.jar:/Users/abcom/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/abcom/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/abcom/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-support/4.11.0/selenium-support-4.11.0.jar:/Users/abcom/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/abcom/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/abcom/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Users/abcom/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.8.v20250724-1412/jre/lib"/>
+    <property name="sun.java.command" value="/Users/abcom/Documents/projects/ProdigyBaby/target/surefire/surefirebooter-20251029183342022_3.jar /Users/abcom/Documents/projects/ProdigyBaby/target/surefire 2025-10-29T18-33-41_910-jvmRun1 surefire-20251029183342022_1tmp surefire_0-20251029183342022_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/abcom/Documents/projects/ProdigyBaby/target/test-classes:/Users/abcom/Documents/projects/ProdigyBaby/target/classes:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-api/4.11.0/selenium-api-4.11.0.jar:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.11.0/selenium-remote-driver-4.11.0.jar:/Users/abcom/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/abcom/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/abcom/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/abcom/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/abcom/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/abcom/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/abcom/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/abcom/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/abcom/.m2/repository/io/netty/netty-buffer/4.1.92.Final/netty-buffer-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-codec-http/4.1.92.Final/netty-codec-http-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-codec/4.1.92.Final/netty-codec-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-handler/4.1.92.Final/netty-handler-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.92.Final/netty-transport-classes-epoll-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.92.Final/netty-transport-classes-kqueue-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-native-epoll/4.1.92.Final/netty-transport-native-epoll-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.92.Final/netty-transport-native-kqueue-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.92.Final/netty-transport-native-unix-common-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport/4.1.92.Final/netty-transport-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-resolver/4.1.92.Final/netty-resolver-4.1.92.Final.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-api/1.26.0/opentelemetry-api-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-context/1.26.0/opentelemetry-context-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.26.0/opentelemetry-exporter-logging-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.26.0/opentelemetry-sdk-metrics-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.26.0-alpha/opentelemetry-extension-incubator-1.26.0-alpha.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.26.0-alpha/opentelemetry-sdk-logs-1.26.0-alpha.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.26.0-alpha/opentelemetry-api-logs-1.26.0-alpha.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.26.0-alpha/opentelemetry-api-events-1.26.0-alpha.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.26.0/opentelemetry-sdk-common-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.26.0/opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.26.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.26.0/opentelemetry-sdk-trace-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.26.0/opentelemetry-sdk-1.26.0.jar:/Users/abcom/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.26.0-alpha/opentelemetry-semconv-1.26.0-alpha.jar:/Users/abcom/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/abcom/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/abcom/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/abcom/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/abcom/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/abcom/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/abcom/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/abcom/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/abcom/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-http/4.11.0/selenium-http-4.11.0.jar:/Users/abcom/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-json/4.11.0/selenium-json-4.11.0.jar:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.11.0/selenium-manager-4.11.0.jar:/Users/abcom/.m2/repository/io/appium/java-client/8.5.1/java-client-8.5.1.jar:/Users/abcom/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/abcom/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/abcom/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/abcom/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/abcom/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/abcom/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/abcom/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/abcom/.m2/repository/commons-io/commons-io/2.12.0/commons-io-2.12.0.jar:/Users/abcom/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/abcom/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/abcom/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/abcom/.m2/repository/org/seleniumhq/selenium/selenium-support/4.11.0/selenium-support-4.11.0.jar:/Users/abcom/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/abcom/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/abcom/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/abcom"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="/Users/abcom/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.8.v20250724-1412/jre"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/abcom/Documents/projects/ProdigyBaby"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/abcom/Documents/projects/ProdigyBaby/target/surefire/surefirebooter-20251029183342022_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.8+9-LTS"/>
+    <property name="user.name" value="abcom"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.8+9"/>
+    <property name="localRepository" value="/Users/abcom/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/45/fpnltrqj1vx77464_l7hmjw80000gn/T/"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="/Users/abcom/Documents/projects/ProdigyBaby"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/abcom/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.8+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testLoginForDifferentUsers[NEW_USER](1)" classname="tests.LoginTest" time="70.998">
+    <system-out><![CDATA[18:33:42,663 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.11
+18:33:42,668 |-INFO in ch.qos.logback.classic.util.ContextInitializer@564fabc8 - No custom configurators were discovered as a service.
+18:33:42,669 |-INFO in ch.qos.logback.classic.util.ContextInitializer@564fabc8 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+18:33:42,673 |-INFO in ch.qos.logback.classic.util.ContextInitializer@564fabc8 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+18:33:42,738 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+18:33:42,740 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+18:33:42,774 |-INFO in ch.qos.logback.classic.util.ContextInitializer@564fabc8 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 69 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+18:33:42,774 |-INFO in ch.qos.logback.classic.util.ContextInitializer@564fabc8 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+18:33:42,777 |-INFO in ch.qos.logback.classic.util.ContextInitializer@564fabc8 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+18:33:42,777 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+18:33:42,787 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/abcom/Documents/projects/ProdigyBaby/target/test-classes/logback.xml]
+18:33:42,789 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@16d04d3d - Resource [logback.xml] occurs multiple times on the classpath.
+18:33:42,789 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@16d04d3d - Resource [logback.xml] occurs at [file:/Users/abcom/Documents/projects/ProdigyBaby/target/classes/logback.xml]
+18:33:42,789 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@16d04d3d - Resource [logback.xml] occurs at [file:/Users/abcom/Documents/projects/ProdigyBaby/target/test-classes/logback.xml]
+18:33:42,975 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+18:33:42,975 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+18:33:42,987 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:33:43,039 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+18:33:43,039 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+18:33:43,048 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:33:43,049 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [test-execution.log]
+18:33:43,051 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STEP_FILE]
+18:33:43,051 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+18:33:43,051 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:33:43,051 |-INFO in ch.qos.logback.core.FileAppender[STEP_FILE] - File property is set to [step-by-step.log]
+18:33:43,053 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [TEST_STEPS] to INFO
+18:33:43,065 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [TEST_STEPS] to false
+18:33:43,065 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STEP_FILE] to Logger[TEST_STEPS]
+18:33:43,066 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[TEST_STEPS]
+18:33:43,066 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+18:33:43,066 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+18:33:43,066 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+18:33:43,066 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@49ec71f8 - End of configuration.
+18:33:43,069 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1d2adfbe - Registering current configuration as safe fallback point
+18:33:43,069 |-INFO in ch.qos.logback.classic.util.ContextInitializer@564fabc8 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 293 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+18:33:43.188 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+🧩 Starting test: testLoginForDifferentUsers
+🧪 Testing login for user type: NEW_USER
+✅ Test completed successfully for NEW_USER
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginForDifferentUsers[PROGRAM_USER](2)" classname="tests.LoginTest" time="143.733">
+    <system-out><![CDATA[🧩 Starting test: testLoginForDifferentUsers
+🧪 Testing login for user type: PROGRAM_USER
+✅ Test completed successfully for PROGRAM_USER
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginForDifferentUsers[SUBSCRIPTION_USER](3)" classname="tests.LoginTest" time="128.404">
+    <system-out><![CDATA[🧩 Starting test: testLoginForDifferentUsers
+🧪 Testing login for user type: SUBSCRIPTION_USER
+✅ Test completed successfully for SUBSCRIPTION_USER
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginForDifferentUsers[LAUNCHPAD_USER](4)" classname="tests.LoginTest" time="121.164">
+    <system-out><![CDATA[🧩 Starting test: testLoginForDifferentUsers
+🧪 Testing login for user type: LAUNCHPAD_USER
+✅ Test completed successfully for LAUNCHPAD_USER
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginForDifferentUsers[PROGRAM_SUBSCRIPTION_USER](5)" classname="tests.LoginTest" time="75.709">
+    <system-out><![CDATA[🧩 Starting test: testLoginForDifferentUsers
+🧪 Testing login for user type: PROGRAM_SUBSCRIPTION_USER
+✅ Test completed successfully for PROGRAM_SUBSCRIPTION_USER
+]]></system-out>
+  </testcase>
+</testsuite>

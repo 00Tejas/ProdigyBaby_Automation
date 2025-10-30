@@ -1,0 +1,1 @@
+2025-10-29 18:33:43.188 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
