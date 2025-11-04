@@ -3,6 +3,7 @@ package pages;
 import base.BasePage;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
+import locators.LoginPageLocators;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -20,26 +21,26 @@ import java.time.Duration;
 public class LoginPage extends BasePage {
 
     // ==================== ERROR MESSAGE LOCATORS ====================
-    private By invalidEmailError = By.xpath("//*[contains(@content-desc, 'invalid') or contains(@content-desc, 'Invalid') or contains(@text, 'invalid') or contains(@text, 'Invalid')][contains(@content-desc, 'email') or contains(@content-desc, 'Email') or contains(@text, 'email') or contains(@text, 'Email')]");
-    private By invalidPasswordError = By.xpath("//*[contains(@content-desc, 'invalid') or contains(@content-desc, 'Invalid') or contains(@text, 'invalid') or contains(@text, 'Invalid')][contains(@content-desc, 'password') or contains(@content-desc, 'Password') or contains(@text, 'password') or contains(@text, 'Password')]");
+    private By invalidEmailError = By.xpath(LoginPageLocators.INVALID_EMAIL_ERROR);
+    private By invalidPasswordError = By.xpath(LoginPageLocators.INVALID_PASSWORD_ERROR);
 
     public LoginPage(AppiumDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     // ==================== SCREEN 1: Tap to Start ====================
     
     public void clickTapToStart() throws Exception {
-        By tapToStartLocator = By.xpath("//android.widget.ImageView[contains(@content-desc, 'Tap to Start')]");
+        By tapToStartLocator = By.xpath(LoginPageLocators.TAP_TO_START);
         waitForElementToBeClickable(tapToStartLocator);
         driver.findElement(tapToStartLocator).click();
-        waitForElementToBeClickable(By.xpath("//android.widget.Button"));
+        waitForElementToBeClickable(By.xpath(LoginPageLocators.GENERIC_BUTTON));
         checkAppStability();
     }
 
     public boolean isTapStartVisible() {
         try {
-            By tapToStartLocator = By.xpath("//android.widget.ImageView[contains(@content-desc, 'Tap to Start')]");
+            By tapToStartLocator = By.xpath(LoginPageLocators.TAP_TO_START);
             return driver.findElement(tapToStartLocator).isDisplayed();
         } catch (Exception e) {
             return false;
@@ -49,10 +50,10 @@ public class LoginPage extends BasePage {
     // ==================== SCREEN 2: Continue Button ====================
     
     public void clickSecondScreenButton() throws Exception {
-        By buttonLocator = By.xpath("//android.widget.Button");
+        By buttonLocator = By.xpath(LoginPageLocators.GENERIC_BUTTON);
         waitForElementToBeClickable(buttonLocator);
         driver.findElement(buttonLocator).click();
-        waitForElementToBeClickable(By.xpath("//*[@content-desc=\"Saw an advertisement\"]"));
+        waitForElementToBeClickable(By.xpath(LoginPageLocators.SAW_AD));
         checkAppStability();
     }
 
@@ -68,17 +69,17 @@ public class LoginPage extends BasePage {
     // ==================== SCREEN 3: Advertisement Selection ====================
     
     public void selectAdvertisement() throws Exception {
-        driver.findElement(By.xpath("//*[@content-desc=\"Saw an advertisement\"]")).click();
+        driver.findElement(By.xpath(LoginPageLocators.SAW_AD)).click();
     }
 
     public void clickContinue() throws Exception {
-        driver.findElement(By.xpath("//*[@content-desc=\"Continue\"]")).click();
-        waitForElementToBeClickable(By.xpath("//android.widget.EditText"));
+        driver.findElement(By.xpath(LoginPageLocators.CONTINUE)).click();
+        waitForElementToBeClickable(By.xpath(LoginPageLocators.EDIT_TEXT));
     }
 
     public boolean isAdvertisementOptionsVisible() {
         try {
-            By advertisementLocator = By.xpath("//*[@content-desc=\"Saw an advertisement\"]");
+            By advertisementLocator = By.xpath(LoginPageLocators.SAW_AD);
             return driver.findElement(advertisementLocator).isDisplayed();
         } catch (Exception e) {
             return false;
@@ -88,22 +89,22 @@ public class LoginPage extends BasePage {
     // ==================== SCREEN 4: Email Entry ====================
     
     public void enterEmail(String email) throws Exception {
-        driver.findElement(By.xpath("//android.widget.EditText")).click();
+        driver.findElement(By.xpath(LoginPageLocators.EDIT_TEXT)).click();
         Thread.sleep(500);
-        driver.findElement(By.xpath("//android.widget.EditText")).sendKeys(email);
+        driver.findElement(By.xpath(LoginPageLocators.EDIT_TEXT)).sendKeys(email);
         Thread.sleep(2000);
     }
 
     public void clickSignIn() throws Exception {
-        waitForElementToBeClickable(By.xpath("//android.widget.Button[@content-desc=\"Sign in\"]"));
-        driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"Sign in\"]")).click();
+        waitForElementToBeClickable(By.xpath(LoginPageLocators.SIGN_IN));
+        driver.findElement(By.xpath(LoginPageLocators.SIGN_IN)).click();
         Thread.sleep(3000);
-        waitForElementToBeClickable(By.xpath("//android.widget.Button[@content-desc=\"Login with Password\"]"));
+        waitForElementToBeClickable(By.xpath(LoginPageLocators.LOGIN_WITH_PASSWORD));
     }
 
     public boolean isEmailFieldVisible() {
         try {
-            By emailFieldLocator = By.xpath("//android.widget.EditText");
+            By emailFieldLocator = By.xpath(LoginPageLocators.EDIT_TEXT);
             return driver.findElement(emailFieldLocator).isDisplayed();
         } catch (Exception e) {
             return false;
@@ -113,23 +114,23 @@ public class LoginPage extends BasePage {
     // ==================== SCREEN 5: Password Entry ====================
     
     public void clickLoginWithPassword() throws Exception {
-        driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"Login with Password\"]")).click();
-        waitForElementToBeClickable(By.xpath("//android.widget.EditText"));
+        driver.findElement(By.xpath(LoginPageLocators.LOGIN_WITH_PASSWORD)).click();
+        waitForElementToBeClickable(By.xpath(LoginPageLocators.EDIT_TEXT));
     }
 
     public void enterPassword(String password) throws Exception {
-        driver.findElement(By.xpath("//android.widget.EditText")).click();
-        driver.findElement(By.xpath("//android.widget.EditText")).sendKeys(password);
+        driver.findElement(By.xpath(LoginPageLocators.EDIT_TEXT)).click();
+        driver.findElement(By.xpath(LoginPageLocators.EDIT_TEXT)).sendKeys(password);
     }
 
     public void clickFinalSignIn() throws Exception {
-        waitForElementToBeClickable(By.xpath("//android.widget.Button[@content-desc=\"Sign in\"]"));
-        driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"Sign in\"]")).click();
+        waitForElementToBeClickable(By.xpath(LoginPageLocators.SIGN_IN));
+        driver.findElement(By.xpath(LoginPageLocators.SIGN_IN)).click();
     }
 
     public boolean isPasswordFieldVisible() {
         try {
-            By passwordFieldLocator = By.xpath("//android.widget.EditText");
+            By passwordFieldLocator = By.xpath(LoginPageLocators.EDIT_TEXT);
             return driver.findElement(passwordFieldLocator).isDisplayed();
         } catch (Exception e) {
             return false;
@@ -154,7 +155,7 @@ public class LoginPage extends BasePage {
     
     public boolean validateSuccessfulLogin() {
         try {
-            waitForElementToBeVisible(By.xpath("//android.view.View[contains(@content-desc, 'Activity Streak')]"));
+            waitForElementToBeVisible(By.xpath(LoginPageLocators.SUCCESS_ACTIVITY_STREAK));
             return true;
         } catch (Exception e) {
             return false;

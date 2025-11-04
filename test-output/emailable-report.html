@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Regression Suite</th></tr>
+<tr><td><a href="#t0">Auth and Content Regression</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">649,975</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Auth and Content Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.regression.AuthFlowTest</td><td><a href="#m0">loginInputDomain</a></td><td rowspan="2">1762258636624</td><td rowspan="2">35466</td></tr><tr class="failedeven"><td><a href="#m1">loginInputDomain</a></td></tr><tr class="failedodd"><td rowspan="4">tests.regression.ContentFlowTest</td><td><a href="#m2">validateTabsPerUser</a></td><td rowspan="4">1762258716679</td><td rowspan="4">89898</td></tr><tr class="failedodd"><td><a href="#m3">validateTabsPerUser</a></td></tr><tr class="failedodd"><td><a href="#m4">validateTabsPerUser</a></td></tr><tr class="failedodd"><td><a href="#m5">validateTabsPerUser</a></td></tr><tr><th colspan="4">Auth and Content Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.regression.AuthFlowTest</td><td><a href="#m6">loginInputDomain</a></td><td rowspan="1">1762258610380</td><td rowspan="1">21213</td></tr><tr class="passedodd"><td rowspan="1">tests.regression.ContentFlowTest</td><td><a href="#m7">validateTabsPerUser</a></td><td rowspan="1">1762258812596</td><td rowspan="1">114590</td></tr></tbody>
+</table>
+<h2>Auth and Content Regression</h2><h3 id="m0">tests.regression.AuthFlowTest#loginInputDomain</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>INVALID_EMAIL</td><td>invalid@email.com</td><td>123456</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Invalid email error not displayed! expected [true] but found [false]
+	at pages.LoginPage.verifyInvalidEmailError(LoginPage.java:166)
+	at tests.regression.AuthFlowTest.loginInputDomain(AuthFlowTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.regression.AuthFlowTest#loginInputDomain</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>INVALID_PASSWORD</td><td>programm12@prodigy.baby</td><td>wrongpassword</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Invalid password error not displayed! expected [true] but found [false]
+	at pages.LoginPage.verifyInvalidPasswordError(LoginPage.java:170)
+	at tests.regression.AuthFlowTest.loginInputDomain(AuthFlowTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.regression.ContentFlowTest#validateTabsPerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>NEW_USER</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Program tab did not load as expected for NEW_USER expected [true] but found [false]
+	at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.regression.ContentFlowTest#validateTabsPerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>PROGRAM_SUBSCRIPTION_USER</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Program tab did not load as expected for PROGRAM_SUBSCRIPTION_USER expected [true] but found [false]
+	at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.regression.ContentFlowTest#validateTabsPerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>LAUNCHPAD_USER</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Program tab did not load as expected for LAUNCHPAD_USER expected [true] but found [false]
+	at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.regression.ContentFlowTest#validateTabsPerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>SUBSCRIPTION_USER</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Program tab did not load as expected for SUBSCRIPTION_USER expected [true] but found [false]
+	at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.regression.AuthFlowTest#loginInputDomain</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>VALID</td><td>program1@prodigy.baby</td><td>123456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.regression.ContentFlowTest#validateTabsPerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>PROGRAM_USER</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

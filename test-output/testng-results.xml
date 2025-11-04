@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="2" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-04T17:46:42 IST" name="Regression Suite" finished-at="2025-11-04T17:57:32 IST" duration-ms="649975">
+    <groups>
+    </groups>
+    <test started-at="2025-11-04T17:46:42 IST" name="Auth and Content Regression" finished-at="2025-11-04T17:57:32 IST" duration-ms="649975">
+      <class name="tests.regression.ContentFlowTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:48:32 IST" name="setUp" finished-at="2025-11-04T17:48:36 IST" duration-ms="4597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.regression.ContentFlowTest.validateTabsPerUser(utils.UserType) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:48:36 IST" name="validateTabsPerUser" description="Validate core content across tabs for each user type" data-provider="userTypes" finished-at="2025-11-04T17:50:06 IST" duration-ms="89898" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NEW_USER]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Program tab did not load as expected for NEW_USER expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Program tab did not load as expected for NEW_USER expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTabsPerUser -->
+        <test-method is-config="true" signature="resetAppAfterTest(org.testng.ITestResult)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:50:06 IST" name="resetAppAfterTest" finished-at="2025-11-04T17:50:07 IST" duration-ms="1167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppAfterTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:50:07 IST" name="tearDown" finished-at="2025-11-04T17:50:07 IST" duration-ms="178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:50:07 IST" name="setUp" finished-at="2025-11-04T17:50:12 IST" duration-ms="4642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.regression.ContentFlowTest.validateTabsPerUser(utils.UserType) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:50:12 IST" name="validateTabsPerUser" description="Validate core content across tabs for each user type" data-provider="userTypes" finished-at="2025-11-04T17:52:07 IST" duration-ms="114590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PROGRAM_USER]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTabsPerUser -->
+        <test-method is-config="true" signature="resetAppAfterTest(org.testng.ITestResult)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:52:07 IST" name="resetAppAfterTest" finished-at="2025-11-04T17:52:07 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTabsPerUser status=SUCCESS method=ContentFlowTest.validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppAfterTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:52:07 IST" name="tearDown" finished-at="2025-11-04T17:52:07 IST" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTabsPerUser status=SUCCESS method=ContentFlowTest.validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:52:07 IST" name="setUp" finished-at="2025-11-04T17:52:12 IST" duration-ms="4765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.regression.ContentFlowTest.validateTabsPerUser(utils.UserType) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:52:12 IST" name="validateTabsPerUser" description="Validate core content across tabs for each user type" data-provider="userTypes" finished-at="2025-11-04T17:54:50 IST" duration-ms="158169" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SUBSCRIPTION_USER]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Program tab did not load as expected for SUBSCRIPTION_USER expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Program tab did not load as expected for SUBSCRIPTION_USER expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTabsPerUser -->
+        <test-method is-config="true" signature="resetAppAfterTest(org.testng.ITestResult)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:54:50 IST" name="resetAppAfterTest" finished-at="2025-11-04T17:54:51 IST" duration-ms="811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppAfterTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:54:51 IST" name="tearDown" finished-at="2025-11-04T17:54:51 IST" duration-ms="161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:54:51 IST" name="setUp" finished-at="2025-11-04T17:54:56 IST" duration-ms="4691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.regression.ContentFlowTest.validateTabsPerUser(utils.UserType) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:54:56 IST" name="validateTabsPerUser" description="Validate core content across tabs for each user type" data-provider="userTypes" finished-at="2025-11-04T17:56:10 IST" duration-ms="74481" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LAUNCHPAD_USER]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Program tab did not load as expected for LAUNCHPAD_USER expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Program tab did not load as expected for LAUNCHPAD_USER expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTabsPerUser -->
+        <test-method is-config="true" signature="resetAppAfterTest(org.testng.ITestResult)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:56:10 IST" name="resetAppAfterTest" finished-at="2025-11-04T17:56:11 IST" duration-ms="800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppAfterTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:56:11 IST" name="tearDown" finished-at="2025-11-04T17:56:11 IST" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:56:11 IST" name="setUp" finished-at="2025-11-04T17:56:16 IST" duration-ms="4623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.regression.ContentFlowTest.validateTabsPerUser(utils.UserType) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:56:16 IST" name="validateTabsPerUser" description="Validate core content across tabs for each user type" data-provider="userTypes" finished-at="2025-11-04T17:57:31 IST" duration-ms="75299" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PROGRAM_SUBSCRIPTION_USER]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Program tab did not load as expected for PROGRAM_SUBSCRIPTION_USER expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Program tab did not load as expected for PROGRAM_SUBSCRIPTION_USER expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTabsPerUser -->
+        <test-method is-config="true" signature="resetAppAfterTest(org.testng.ITestResult)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:57:31 IST" name="resetAppAfterTest" finished-at="2025-11-04T17:57:32 IST" duration-ms="723" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppAfterTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225]" started-at="2025-11-04T17:57:32 IST" name="tearDown" finished-at="2025-11-04T17:57:32 IST" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils.UserType)[pri:0, instance:tests.regression.ContentFlowTest@9cb8225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.regression.ContentFlowTest -->
+      <class name="tests.regression.AuthFlowTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:46:42 IST" name="setUp" finished-at="2025-11-04T17:46:50 IST" duration-ms="7931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.regression.AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:46:50 IST" name="loginInputDomain" description="Validate login with valid and invalid credentials" data-provider="credentialData" finished-at="2025-11-04T17:47:11 IST" duration-ms="21213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[VALID]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[program1@prodigy.baby]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInputDomain -->
+        <test-method is-config="true" signature="resetAppAfterTest(org.testng.ITestResult)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:47:11 IST" name="resetAppAfterTest" finished-at="2025-11-04T17:47:11 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginInputDomain status=SUCCESS method=AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppAfterTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:47:11 IST" name="tearDown" finished-at="2025-11-04T17:47:11 IST" duration-ms="286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginInputDomain status=SUCCESS method=AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:47:11 IST" name="setUp" finished-at="2025-11-04T17:47:16 IST" duration-ms="4707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.regression.AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:47:16 IST" name="loginInputDomain" description="Validate login with valid and invalid credentials" data-provider="credentialData" finished-at="2025-11-04T17:47:52 IST" duration-ms="35466" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INVALID_EMAIL]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid@email.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid email error not displayed! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid email error not displayed! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at pages.LoginPage.verifyInvalidEmailError(LoginPage.java:166)
+at tests.regression.AuthFlowTest.loginInputDomain(AuthFlowTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInputDomain -->
+        <test-method is-config="true" signature="resetAppAfterTest(org.testng.ITestResult)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:47:52 IST" name="resetAppAfterTest" finished-at="2025-11-04T17:47:53 IST" duration-ms="988" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginInputDomain status=FAILURE method=AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppAfterTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:47:53 IST" name="tearDown" finished-at="2025-11-04T17:47:53 IST" duration-ms="199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginInputDomain status=FAILURE method=AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:47:53 IST" name="setUp" finished-at="2025-11-04T17:47:58 IST" duration-ms="4741" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.regression.AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:47:58 IST" name="loginInputDomain" description="Validate login with valid and invalid credentials" data-provider="credentialData" finished-at="2025-11-04T17:48:31 IST" duration-ms="33031" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INVALID_PASSWORD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[programm12@prodigy.baby]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[wrongpassword]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid password error not displayed! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid password error not displayed! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at pages.LoginPage.verifyInvalidPasswordError(LoginPage.java:170)
+at tests.regression.AuthFlowTest.loginInputDomain(AuthFlowTest.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInputDomain -->
+        <test-method is-config="true" signature="resetAppAfterTest(org.testng.ITestResult)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:48:31 IST" name="resetAppAfterTest" finished-at="2025-11-04T17:48:31 IST" duration-ms="785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginInputDomain status=FAILURE method=AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppAfterTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab]" started-at="2025-11-04T17:48:31 IST" name="tearDown" finished-at="2025-11-04T17:48:32 IST" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginInputDomain status=FAILURE method=AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,java.lang.String)[pri:0, instance:tests.regression.AuthFlowTest@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.regression.AuthFlowTest -->
+    </test> <!-- Auth and Content Regression -->
+  </suite> <!-- Regression Suite -->
+</testng-results>

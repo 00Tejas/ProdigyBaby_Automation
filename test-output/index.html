@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Regression_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Regression Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Regression_Suite" class="navigator-link ">
+                    <span>regressionSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Regression_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Regression_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Regression_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Regression_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Regression_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Regression_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 6 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods failed suite-Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods failed suite-Regression_Suite"> (show)</a> <!-- show-methods failed suite-Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.regression.AuthFlowTest" class="method navigator-link" hash-for-method="loginInputDomain(INVALID_EMAIL, invalid@email.com, 123456)">loginInputDomain(INVALID_EMAIL, invalid@email.com, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.regression.AuthFlowTest" class="method navigator-link" hash-for-method="loginInputDomain(INVALID_PASSWORD, programm12@prodigy.baby, wrongpassword)">loginInputDomain(INVALID_PASSWORD, programm12@prodigy.baby, wrongpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.regression.ContentFlowTest" class="method navigator-link" hash-for-method="validateTabsPerUser(NEW_USER)">validateTabsPerUser(NEW_USER)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.regression.ContentFlowTest" class="method navigator-link" hash-for-method="validateTabsPerUser(PROGRAM_SUBSCRIPTION_USER)">validateTabsPerUser(PROGRAM_SUBSCRIPTION_USER)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.regression.ContentFlowTest" class="method navigator-link" hash-for-method="validateTabsPerUser(LAUNCHPAD_USER)">validateTabsPerUser(LAUNCHPAD_USER)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.regression.ContentFlowTest" class="method navigator-link" hash-for-method="validateTabsPerUser(SUBSCRIPTION_USER)">validateTabsPerUser(SUBSCRIPTION_USER)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods passed suite-Regression_Suite"> (hide)</a> <!-- hide-methods passed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods passed suite-Regression_Suite"> (show)</a> <!-- show-methods passed suite-Regression_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Regression_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.regression.AuthFlowTest" class="method navigator-link" hash-for-method="loginInputDomain(VALID, program1@prodigy.baby, 123456)">loginInputDomain(VALID, program1@prodigy.baby, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.regression.ContentFlowTest" class="method navigator-link" hash-for-method="validateTabsPerUser(PROGRAM_USER)">validateTabsPerUser(PROGRAM_USER)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Regression_Suite" class="panel Regression_Suite">
+          <div class="suite-Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.regression.AuthFlowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInputDomain(INVALID_EMAIL, invalid@email.com, 123456)">
+                  </a> <!-- loginInputDomain(INVALID_EMAIL, invalid@email.com, 123456) -->
+                  <span class="method-name">loginInputDomain</span>
+                  <span class="parameters">(INVALID_EMAIL,invalid@email.com,123456)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid email error not displayed! expected [true] but found [false]
+	at pages.LoginPage.verifyInvalidEmailError(LoginPage.java:166)
+	at tests.regression.AuthFlowTest.loginInputDomain(AuthFlowTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate login with valid and invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInputDomain(INVALID_PASSWORD, programm12@prodigy.baby, wrongpassword)">
+                  </a> <!-- loginInputDomain(INVALID_PASSWORD, programm12@prodigy.baby, wrongpassword) -->
+                  <span class="method-name">loginInputDomain</span>
+                  <span class="parameters">(INVALID_PASSWORD,programm12@prodigy.baby,wrongpassword)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid password error not displayed! expected [true] but found [false]
+	at pages.LoginPage.verifyInvalidPasswordError(LoginPage.java:170)
+	at tests.regression.AuthFlowTest.loginInputDomain(AuthFlowTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate login with valid and invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-failed -->
+          <div class="suite-Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.regression.ContentFlowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTabsPerUser(NEW_USER)">
+                  </a> <!-- validateTabsPerUser(NEW_USER) -->
+                  <span class="method-name">validateTabsPerUser</span>
+                  <span class="parameters">(NEW_USER)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Program tab did not load as expected for NEW_USER expected [true] but found [false]
+	at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate core content across tabs for each user type)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTabsPerUser(PROGRAM_SUBSCRIPTION_USER)">
+                  </a> <!-- validateTabsPerUser(PROGRAM_SUBSCRIPTION_USER) -->
+                  <span class="method-name">validateTabsPerUser</span>
+                  <span class="parameters">(PROGRAM_SUBSCRIPTION_USER)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Program tab did not load as expected for PROGRAM_SUBSCRIPTION_USER expected [true] but found [false]
+	at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate core content across tabs for each user type)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTabsPerUser(LAUNCHPAD_USER)">
+                  </a> <!-- validateTabsPerUser(LAUNCHPAD_USER) -->
+                  <span class="method-name">validateTabsPerUser</span>
+                  <span class="parameters">(LAUNCHPAD_USER)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Program tab did not load as expected for LAUNCHPAD_USER expected [true] but found [false]
+	at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate core content across tabs for each user type)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTabsPerUser(SUBSCRIPTION_USER)">
+                  </a> <!-- validateTabsPerUser(SUBSCRIPTION_USER) -->
+                  <span class="method-name">validateTabsPerUser</span>
+                  <span class="parameters">(SUBSCRIPTION_USER)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Program tab did not load as expected for SUBSCRIPTION_USER expected [true] but found [false]
+	at tests.regression.ContentFlowTest.validateTabsPerUser(ContentFlowTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate core content across tabs for each user type)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-failed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.regression.AuthFlowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInputDomain(VALID, program1@prodigy.baby, 123456)">
+                  </a> <!-- loginInputDomain(VALID, program1@prodigy.baby, 123456) -->
+                  <span class="method-name">loginInputDomain</span>
+                  <span class="parameters">(VALID,program1@prodigy.baby,123456)</span>
+                  <em>
+(Validate login with valid and invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.regression.ContentFlowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTabsPerUser(PROGRAM_USER)">
+                  </a> <!-- validateTabsPerUser(PROGRAM_USER) -->
+                  <span class="method-name">validateTabsPerUser</span>
+                  <span class="parameters">(PROGRAM_USER)</span>
+                  <em>
+(Validate core content across tabs for each user type)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+        </div> <!-- panel Regression_Suite -->
+        <div panel-name="test-xml-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/abcom/Documents/projects/ProdigyBaby/testng/regressionSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Auth and Content Regression&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.regression.AuthFlowTest&quot;/&gt;
+      &lt;class name=&quot;tests.regression.ContentFlowTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Auth and Content Regression --&gt;
+&lt;/suite&gt; &lt;!-- Regression Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Auth and Content Regression (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Regression_Suite');
+function tableData_Regression_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateTabsPerUser')
+data.setCell(0, 2, 'tests.regression.ContentFlowTest')
+data.setCell(0, 3, 158169);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateTabsPerUser')
+data.setCell(1, 2, 'tests.regression.ContentFlowTest')
+data.setCell(1, 3, 114590);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateTabsPerUser')
+data.setCell(2, 2, 'tests.regression.ContentFlowTest')
+data.setCell(2, 3, 89898);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateTabsPerUser')
+data.setCell(3, 2, 'tests.regression.ContentFlowTest')
+data.setCell(3, 3, 75299);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateTabsPerUser')
+data.setCell(4, 2, 'tests.regression.ContentFlowTest')
+data.setCell(4, 3, 74481);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginInputDomain')
+data.setCell(5, 2, 'tests.regression.AuthFlowTest')
+data.setCell(5, 3, 35466);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginInputDomain')
+data.setCell(6, 2, 'tests.regression.AuthFlowTest')
+data.setCell(6, 3, 33031);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginInputDomain')
+data.setCell(7, 2, 'tests.regression.AuthFlowTest')
+data.setCell(7, 3, 21213);
+window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <div id="times-div-Regression_Suite">
+              </div> <!-- times-div-Regression_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.regression.AuthFlowTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.regression.AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,ja...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginInputDomain(VALID, program1@prodigy.baby, 123456)</span>
+                <span class="method-start">7939 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppAfterTest([TestResult name=loginInputDomain status=SUCCESS method=AuthFlowTest.loginInputDomain(utils.Credenti...)</span>
+                <span class="method-start">29179 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginInputDomain status=SUCCESS method=AuthFlowTest.loginInputDomain(utils.Credenti...)</span>
+                <span class="method-start">29186 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.regression.AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,ja...)</span>
+                <span class="method-start">29476 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginInputDomain(INVALID_EMAIL, invalid@email.com, 123456)</span>
+                <span class="method-start">34183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppAfterTest([TestResult name=loginInputDomain status=FAILURE method=AuthFlowTest.loginInputDomain(utils.Credenti...)</span>
+                <span class="method-start">69660 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginInputDomain status=FAILURE method=AuthFlowTest.loginInputDomain(utils.Credenti...)</span>
+                <span class="method-start">70650 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.regression.AuthFlowTest.loginInputDomain(utils.CredentialsType,java.lang.String,ja...)</span>
+                <span class="method-start">70852 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginInputDomain(INVALID_PASSWORD, programm12@prodigy.baby, wrongpassword)</span>
+                <span class="method-start">75595 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppAfterTest([TestResult name=loginInputDomain status=FAILURE method=AuthFlowTest.loginInputDomain(utils.Credenti...)</span>
+                <span class="method-start">108644 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginInputDomain status=FAILURE method=AuthFlowTest.loginInputDomain(utils.Credenti...)</span>
+                <span class="method-start">109431 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.regression.ContentFlowTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.regression.ContentFlowTest.validateTabsPerUser(utils.UserType) throws java.lang.Ex...)</span>
+                <span class="method-start">109640 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateTabsPerUser(NEW_USER)</span>
+                <span class="method-start">114238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppAfterTest([TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils...)</span>
+                <span class="method-start">204152 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils...)</span>
+                <span class="method-start">205321 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.regression.ContentFlowTest.validateTabsPerUser(utils.UserType) throws java.lang.Ex...)</span>
+                <span class="method-start">205512 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTabsPerUser(PROGRAM_USER)</span>
+                <span class="method-start">210155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppAfterTest([TestResult name=validateTabsPerUser status=SUCCESS method=ContentFlowTest.validateTabsPerUser(utils...)</span>
+                <span class="method-start">324760 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateTabsPerUser status=SUCCESS method=ContentFlowTest.validateTabsPerUser(utils...)</span>
+                <span class="method-start">324762 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.regression.ContentFlowTest.validateTabsPerUser(utils.UserType) throws java.lang.Ex...)</span>
+                <span class="method-start">325013 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateTabsPerUser(SUBSCRIPTION_USER)</span>
+                <span class="method-start">329779 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppAfterTest([TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils...)</span>
+                <span class="method-start">487970 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils...)</span>
+                <span class="method-start">488782 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.regression.ContentFlowTest.validateTabsPerUser(utils.UserType) throws java.lang.Ex...)</span>
+                <span class="method-start">488945 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateTabsPerUser(LAUNCHPAD_USER)</span>
+                <span class="method-start">493636 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppAfterTest([TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils...)</span>
+                <span class="method-start">568132 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils...)</span>
+                <span class="method-start">568933 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.regression.ContentFlowTest.validateTabsPerUser(utils.UserType) throws java.lang.Ex...)</span>
+                <span class="method-start">569077 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateTabsPerUser(PROGRAM_SUBSCRIPTION_USER)</span>
+                <span class="method-start">573701 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppAfterTest([TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils...)</span>
+                <span class="method-start">649015 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateTabsPerUser status=FAILURE method=ContentFlowTest.validateTabsPerUser(utils...)</span>
+                <span class="method-start">649739 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
