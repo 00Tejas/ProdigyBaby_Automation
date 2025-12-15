@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Program Purchase Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Program Purchase(failed)">
+    <classes>
+      <class name="tests.regression.ProgramPurchaseTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="purchaseProgramAfterOnboarding"/>
+        </methods>
+      </class> <!-- tests.regression.ProgramPurchaseTest -->
+    </classes>
+  </test> <!-- Program Purchase(failed) -->
+</suite> <!-- Failed suite [Program Purchase Suite] -->

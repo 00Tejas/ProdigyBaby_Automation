@@ -17,6 +17,11 @@ public class HomeTabLocators {
     public static final String TALENT_CORNER_TEXT = "//android.view.View[@content-desc=\"Talent Corner\"]";
     public static final String FEEDBACK_POPUP = "//android.view.View[@content-desc='Enjoying Prodigy Baby?']";
     public static final String JOIN_NOW = "//android.view.View[@content-desc=\"Join Now!\"]";
+    public static final String LAUNCHPAD_POPUP_DISMISS = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[1]";
+    // Child details popup cross button (appears after onboarding)
+    public static final String CHILD_DETAILS_POPUP_CROSS = "//android.widget.Button";
+    // Home tab icon (used to refresh data after onboarding)
+    public static final String HOME_TAB_ICON = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[1]";
 }
 
 

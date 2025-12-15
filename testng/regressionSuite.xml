@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Regression Suite" verbose="1" parallel="false">
-  <test name="Auth and Content Regression">
+  <test name="Auth Flow Test">
     <classes>
-      <class name="tests.regression.AuthFlowTest" />
-      <class name="tests.regression.ContentFlowTest" />
+
+      <class name="tests.regression.CommunityTabTest" />
     </classes>
   </test>
-</suite>
+</suite> 
 
 

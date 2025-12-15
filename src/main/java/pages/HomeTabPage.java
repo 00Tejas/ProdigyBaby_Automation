@@ -23,6 +23,46 @@ public class HomeTabPage extends BasePage {
         return isVisible(By.xpath(HomeTabLocators.SUBSCRIBE_BUTTON), 5);
     }
 
+    /**
+     * Tap the Subscribe CTA if it is present.
+     * @return true if tapped or already visible.
+     */
+    public boolean tapSubscribeButtonIfPresent() {
+        try {
+            By subscribeButton = By.xpath(HomeTabLocators.SUBSCRIBE_BUTTON);
+            if (isVisible(subscribeButton, 5)) {
+                click(subscribeButton);
+                return true;
+            }
+        } catch (Exception e) {
+            // ignore and return false
+        }
+        return false;
+    }
+
+    /**
+     * Dismisses the child details popup that appears after onboarding.
+     * This popup has a cross button that needs to be clicked.
+     * @return true if popup was found and dismissed, false otherwise
+     */
+    public boolean dismissChildDetailsPopup() {
+        try {
+            System.out.println("🔍 Checking for child details popup after onboarding...");
+            Thread.sleep(2000); // Wait for popup to appear
+            
+            By crossButton = By.xpath(HomeTabLocators.CHILD_DETAILS_POPUP_CROSS);
+            if (isVisible(crossButton, 5)) {
+                click(crossButton);
+                Thread.sleep(1000);
+                System.out.println("✅ Child details popup dismissed");
+                return true;
+            }
+        } catch (Exception e) {
+            System.out.println("⚠️ Child details popup not found or already dismissed: " + e.getMessage());
+        }
+        return false;
+    }
+
     public boolean isNotificationIconVisible() {
         return isVisible(By.xpath(HomeTabLocators.NOTIFICATION_ICON), 5);
     }
@@ -147,6 +187,22 @@ public class HomeTabPage extends BasePage {
     public boolean handleAllPopups() {
         try {
             Thread.sleep(2000);
+            
+            // Check for launchpad popup dismiss button
+            try {
+                WebDriverWait launchpadWait = new WebDriverWait(driver, Duration.ofSeconds(3));
+                WebElement launchpadPopup = launchpadWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(HomeTabLocators.LAUNCHPAD_POPUP_DISMISS)));
+                if (launchpadPopup.isDisplayed()) {
+                    launchpadPopup.click();
+                    Thread.sleep(1000);
+                    System.out.println("✅ Launchpad popup dismissed");
+                    handleHelpBottomSheet();
+                    return true;
+                }
+            } catch (Exception e) {
+                // Launchpad popup not found, continue
+            }
+            
             String salesPopupPath = "//android.view.View[@content-desc=\"Screenfree activities for your 0-6 year old child or toddler\nCurated by experts, backed by science\"]";
             boolean salesPopupFound = false;
             try {
@@ -193,25 +249,61 @@ public class HomeTabPage extends BasePage {
     }
 
     public void validateHomeTabUI(UserType userType) {
+        System.out.println("🔍 Validating Home Tab UI elements for " + userType + "...");
+        
         switch (userType) {
             case NEW_USER:
-            	isActivityStreakVisible();
-            	
-            case LAUNCHPAD_USER:
-            	isExpertSessionTextVisible();
-                break;
-            case PROGRAM_USER:
-            	isActivityStreakVisible();
-            case PROGRAM_SUBSCRIPTION_USER:
-                isActivityStreakVisible();
+                System.out.println("  ✓ Checking Activity Streak for NEW_USER...");
+                boolean streakVisible = isActivityStreakVisible();
+                System.out.println(streakVisible ? "  ✅ Activity Streak is visible" : "  ❌ Activity Streak not visible");
                 
+                System.out.println("  ✓ Checking This Week's Activities Text for NEW_USER...");
+                boolean thisWeekVisible = isThisWeekActivityTextVisible();
+                System.out.println(thisWeekVisible ? "  ✅ This Week's Activities Text is visible" : "  ❌ This Week's Activities Text not visible");
                 break;
+                
+            case LAUNCHPAD_USER:
+                System.out.println("  ✓ Checking Activity Streak for LAUNCHPAD_USER...");
+                boolean streakVisibleLaunch = isActivityStreakVisible();
+                System.out.println(streakVisibleLaunch ? "  ✅ Activity Streak is visible" : "  ❌ Activity Streak not visible");
+                
+                System.out.println("  ✓ Checking Expert Sessions Text for LAUNCHPAD_USER...");
+                boolean expertVisible = isExpertSessionTextVisible();
+                System.out.println(expertVisible ? "  ✅ Expert Sessions Text is visible" : "  ❌ Expert Sessions Text not visible");
+                break;
+                
+            case PROGRAM_USER:
+                System.out.println("  ✓ Checking Activity Streak for PROGRAM_USER...");
+                boolean streakVisibleProg = isActivityStreakVisible();
+                System.out.println(streakVisibleProg ? "  ✅ Activity Streak is visible" : "  ❌ Activity Streak not visible");
+                
+                System.out.println("  ✓ Checking Program Card for PROGRAM_USER...");
+                boolean programCardVisible = isProgramCardVisible();
+                System.out.println(programCardVisible ? "  ✅ Program Card is visible" : "  ❌ Program Card not visible");
+                break;
+                
+            case PROGRAM_SUBSCRIPTION_USER:
+                System.out.println("  ✓ Checking Activity Streak for PROGRAM_SUBSCRIPTION_USER...");
+                boolean streakVisibleProgSub = isActivityStreakVisible();
+                System.out.println(streakVisibleProgSub ? "  ✅ Activity Streak is visible" : "  ❌ Activity Streak not visible");
+                break;
+                
             case SUBSCRIPTION_USER:
-                isSubscriptionActivityCardVisible();
-                break; 
-            default:
-                isActivityStreakVisible();
+                System.out.println("  ✓ Checking Subscription Activity Card for SUBSCRIPTION_USER...");
+                boolean subCardVisible = isSubscriptionActivityCardVisible();
+                System.out.println(subCardVisible ? "  ✅ Subscription Activity Card is visible" : "  ❌ Subscription Activity Card not visible");
+                
+                System.out.println("  ✓ Checking Membership Icon for SUBSCRIPTION_USER...");
+                boolean membershipIconVisible = isMembershipIconVisible();
+                System.out.println(membershipIconVisible ? "  ✅ Membership Icon is visible" : "  ❌ Membership Icon not visible");
+                
+                System.out.println("  ✓ Checking Activity Streak for SUBSCRIPTION_USER...");
+                boolean streakVisibleSub = isActivityStreakVisible();
+                System.out.println(streakVisibleSub ? "  ✅ Activity Streak is visible" : "  ❌ Activity Streak not visible");
+                break;
         }
+        
+        System.out.println("✅ Home Tab UI validation completed for " + userType);
     }
 }
 

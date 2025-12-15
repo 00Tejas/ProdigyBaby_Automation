@@ -1,0 +1,313 @@
+15:56:44.035 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:56:44.044 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+15:56:54.156 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+15:56:54.189 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+15:57:04.226 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/uocfxegiazyzl4mzikgxm3hstxmommc5aub27brn to view build report, insights, and many more debugging information all at one place!
+
+16:00:15.105 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:00:15.113 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:00:21.803 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:00:21.831 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:00:31.808 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/brrmsrsccjlmixit5norbbcffpggee3seqpcej54 to view build report, insights, and many more debugging information all at one place!
+
+16:00:55.286 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:00:55.294 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:01:02.078 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:01:02.104 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:01:12.081 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/zrcnkpscc4gvfpyvqifyyskcgtqgvcq673bjeo8h to view build report, insights, and many more debugging information all at one place!
+
+16:06:56.487 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:06:56.494 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:07:03.282 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:07:03.311 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:07:13.883 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/zyel1kourub7ndaeanmbxeoa8ipbcmjbvfffbzh1 to view build report, insights, and many more debugging information all at one place!
+
+16:09:28.046 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:09:28.053 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:09:34.604 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:09:34.631 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:09:35.328 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/0akupy2bgnbzfmp6emmt1d9dahfuuffdfxfzblkm to view build report, insights, and many more debugging information all at one place!
+
+16:09:44.947 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:09:44.955 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:09:51.677 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:09:51.704 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:09:52.422 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/3jidbuouc4jfuyivzdo9edncoxzb2qiz9cjnnwv4 to view build report, insights, and many more debugging information all at one place!
+
+16:10:05.437 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:10:05.444 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:10:11.969 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:10:11.996 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:10:21.963 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/5vwlszkabpbtnqlzwtrtg9mhtyuie9cexnlduhcc to view build report, insights, and many more debugging information all at one place!
+
+16:10:32.866 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:10:32.873 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:10:39.787 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:10:39.814 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:10:49.670 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/fh3alp8puro5mvclbzykk1zukxzxilvefpys90uf to view build report, insights, and many more debugging information all at one place!
+
+16:11:24.846 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:11:24.853 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:11:31.392 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:11:31.419 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:11:41.366 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/jmn9jija0nxvemmlidf84aupn6og72keevhuwq5f to view build report, insights, and many more debugging information all at one place!
+
+16:11:54.572 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:11:54.580 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:12:01.179 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:12:01.205 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:12:11.041 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/xsealmrjws2zgjrhelmmsps2frhjlooqqk2tuf9o to view build report, insights, and many more debugging information all at one place!
+
+16:12:32.884 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:12:32.891 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:12:40.835 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:12:40.861 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:12:41.682 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/aeav01gkf4owacuwvwe0ee2cqavnyxq2lv5sgp5f to view build report, insights, and many more debugging information all at one place!
+
+16:12:53.034 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:12:53.040 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:12:59.806 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:12:59.834 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:13:00.613 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/oggapqyjtdapt41vesim4jo8pgj15oy5ypzpf3ad to view build report, insights, and many more debugging information all at one place!
+
+16:13:29.774 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:13:29.781 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:13:36.444 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:13:36.470 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:13:46.530 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/a6r6tjsud1lylycqy7fhmudiv9h3a6xkj7nfazbo to view build report, insights, and many more debugging information all at one place!
+
+16:19:11.080 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:19:11.087 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:19:17.742 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+16:19:17.775 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+16:19:27.822 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/lnlnammw5evpej5bqwwmffzuzusidfp7zpjlsbge to view build report, insights, and many more debugging information all at one place!
+
+16:30:10.085 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:30:10.093 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+17:25:15.605 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:25:15.614 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+17:30:47.236 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:30:47.244 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+17:36:29.080 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:36:29.087 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+17:36:35.825 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:36:35.875 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+17:36:35.904 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+17:37:51.831 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/xjxtestedo4zkshuetlygcag3jiebk3mmfacbsxk to view build report, insights, and many more debugging information all at one place!
+
+17:44:06.064 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:44:06.073 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+17:44:12.833 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:44:12.884 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+17:44:12.914 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+17:45:29.062 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/lbo4wqdqiqrdffdpyhkddkms5wnylsbmdwenzviw to view build report, insights, and many more debugging information all at one place!
+
+17:48:56.242 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:48:56.250 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+17:49:02.972 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:49:03.021 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+17:49:03.052 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+17:50:19.104 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/6eawspeh1wujkvn6t7lorrors1vwbeop3adpmalb to view build report, insights, and many more debugging information all at one place!
+
+17:50:46.968 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:50:46.974 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+17:50:53.552 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:50:53.596 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+17:50:53.624 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+17:52:09.585 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/yfwurod2d4fkqugfkq3kbvoxd7ra45ykxjy5xkcu to view build report, insights, and many more debugging information all at one place!
+
+17:52:27.203 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:52:27.210 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+17:52:33.773 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:52:33.822 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+17:52:33.852 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+17:53:49.975 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/oyjw4ihpam4mnqr8ryecn9yzwexxhjx7qqmlgrrb to view build report, insights, and many more debugging information all at one place!
+
+17:55:19.969 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:55:19.977 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+17:55:26.891 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:55:26.941 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+17:55:26.971 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+17:56:42.749 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/doe5zwylnhbjrh0mtfwa1i34pjqdtkxfpkxzij5j to view build report, insights, and many more debugging information all at one place!
+
+13:57:39.450 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:57:39.482 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+13:57:50.239 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:57:50.685 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+13:57:50.953 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+13:57:51.216 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:58:08.486 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/u1swvf6tnph8vg3kdvtoow8mnzvaq5mu6prhwmdj to view build report, insights, and many more debugging information all at one place!
+
+14:20:21.061 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:20:21.089 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+14:20:29.838 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:20:30.274 [main] ERROR c.b.DriverServiceTransformer - [source error] Field capabilities in org.openqa.selenium.remote.RemoteWebDriver is private.
+14:20:30.437 [main] ERROR c.b.DriverServiceTransformer - Session Retry Failed on SSL Error - javassist.CannotCompileException: [source error] no such field: $2
+14:20:30.698 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:20:48.551 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/vfaiqdpsjkofj2xnm4teeshmtr0fjhwm4avw2ydf to view build report, insights, and many more debugging information all at one place!
+
+14:59:03.943 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:59:04.569 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:00:54.585 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:00:55.215 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:11:28.293 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:11:52.230 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:37:57.080 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:24:51.691 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:21:37.124 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:21:37.741 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:49:39.769 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:49:40.398 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:22:22.770 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:22:23.369 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:08:02.775 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:08:03.419 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:09:50.630 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:12:33.862 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:12:34.450 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:14:25.630 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:14:26.187 [main] INFO  c.b.config.BrowserStackConfig - INFO
+11:18:36.981 [main] INFO  c.b.config.BrowserStackConfig - INFO
+11:18:37.564 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:12:42.467 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:12:43.057 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:23:53.943 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:23:54.498 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:49:26.519 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:49:27.119 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:15:30.854 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:15:31.609 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:01:05.148 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:06:00.326 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:07:22.582 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:07:23.347 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:22:36.842 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:22:37.651 [main] INFO  c.b.config.BrowserStackConfig - INFO
+11:41:18.537 [main] INFO  c.b.config.BrowserStackConfig - INFO
+11:41:19.293 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:56:35.522 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:56:36.145 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:39:37.502 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:39:38.303 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:44:31.850 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:44:32.636 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:10:17.210 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:10:17.802 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:47:18.116 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:47:18.846 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:58:39.204 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:58:39.769 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:06:54.372 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:06:55.037 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:10:05.017 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:10:05.594 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:24:44.137 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:24:44.861 [main] INFO  c.b.config.BrowserStackConfig - INFO
+11:52:08.956 [main] INFO  c.b.config.BrowserStackConfig - INFO
+11:52:09.714 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:55:35.898 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:55:36.659 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:31:50.062 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:32:02.912 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:35:00.563 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:35:01.417 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:42:11.105 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:42:11.862 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:55:37.794 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:55:38.549 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:02:47.824 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:02:48.393 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:28:23.961 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:28:24.659 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:37:20.227 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:37:20.818 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:44:05.045 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:44:05.609 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:46:02.670 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:46:03.256 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:52:23.913 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:52:24.659 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:01:29.702 [main] INFO  c.b.config.BrowserStackConfig - INFO
+18:01:30.478 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.690 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.699 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.703 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.703 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.707 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.707 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.709 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.710 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.712 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.712 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.713 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.713 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.715 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.715 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.719 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.719 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.725 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.740 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.742 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.743 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.749 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.749 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.749 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.750 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.767 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.778 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.783 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.783 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.784 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.784 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.792 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:53:37.826 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:54:10.153 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:54:10.727 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:55:30.926 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:55:31.496 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:12:12.942 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:12:13.638 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:24:06.675 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:24:07.475 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:52:09.769 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:52:10.475 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:59:49.270 [main] INFO  c.b.config.BrowserStackConfig - INFO
+12:59:49.853 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:53:45.979 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:53:46.599 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:57:36.504 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:57:37.063 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:09:14.848 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:09:15.416 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:24:31.283 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:24:31.986 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:46:57.976 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:46:58.574 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:41:06.480 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:41:07.090 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:00:23.915 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:00:24.479 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:34:02.451 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:34:03.065 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:09:55.337 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:09:56.184 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:10:10.312 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:10:10.899 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:12:28.458 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:12:29.034 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:31:39.495 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:31:40.074 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:41:37.279 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:41:37.877 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:44:57.994 [main] INFO  c.b.config.BrowserStackConfig - INFO
+15:44:58.583 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:25:45.922 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:25:46.503 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:32:07.098 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:32:07.670 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:41:52.845 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:41:53.446 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:54:09.385 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:54:09.989 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:50:24.073 [main] INFO  c.b.config.BrowserStackConfig - INFO
+17:50:24.672 [main] INFO  c.b.config.BrowserStackConfig - INFO

@@ -1,0 +1,97 @@
+15:53:06.844 [main] INFO  c.b.launchers.LaunchMavenCommand - Executing maven archetype command - browserstack-sdk-archetype-integrate
+15:53:06.892 [main] INFO  c.b.launchers.LaunchMavenCommand - The maven properties for launcher are [archetypeVersion=1.5, archetypeGroupId=com.browserstack, archetypeArtifactId=browserstack-sdk-archetype-integrate, BROWSERSTACK_ACCESS_KEY=fzmWUBJ5QAsyiD5684Fq, groupId=com.browserstack, artifactId=java-archetype-integrate, BROWSERSTACK_USERNAME=raghavhimatsingk_lEOYsZ, BROWSERSTACK_FRAMEWORK=java, BUILD_NAME=browserstack build, version=1.0, PROJECT_NAME=BrowserStack Sample, BROWSERSTACK_SOURCE=java:eclipse:v1.0.10]
+15:54:24.801 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+15:54:24.803 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+15:54:24.804 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+15:54:24.805 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+15:54:24.806 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+15:54:24.807 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+16:19:45.000 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+16:19:45.002 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+16:19:45.004 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+16:19:45.005 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+16:19:45.005 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+16:19:45.005 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+16:19:47.881 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+16:19:47.882 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+16:19:47.883 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+16:19:47.883 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+16:19:47.883 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+16:19:47.884 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+17:57:16.827 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+17:57:16.828 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+17:57:16.829 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+17:57:16.829 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+17:57:16.829 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+17:57:16.830 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+17:57:19.718 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+17:57:19.719 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+17:57:19.720 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+17:57:19.722 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+17:57:19.722 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+17:57:19.723 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+17:57:30.349 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+17:57:30.349 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+17:57:30.350 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+17:57:30.350 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+17:57:30.350 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+17:57:30.350 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+17:57:32.078 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+17:57:32.079 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+17:57:32.080 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+17:57:32.081 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+17:57:32.081 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+17:57:32.081 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+17:57:43.585 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+17:57:43.589 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+17:57:43.591 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+17:57:43.592 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+17:57:43.592 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+17:57:43.593 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+18:36:49.750 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+18:36:49.751 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+18:36:49.752 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+18:36:49.752 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+18:36:49.752 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+18:36:49.753 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+18:58:49.385 [Framework stop - Equinox Container: 608a3453-de85-4f17-93e2-6d948198d4ca] INFO  c.b.BrowserStackPluginActivator - Stopping BrowserStack Plugin...
+14:02:58.737 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+14:02:58.738 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+14:02:58.738 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+14:02:58.738 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+14:02:58.738 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+14:02:58.739 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+14:02:59.954 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+14:02:59.954 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+14:02:59.955 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+14:02:59.956 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+14:02:59.956 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+14:02:59.956 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+14:04:06.847 [main] INFO  c.b.launchers.LaunchMavenCommand - Executing maven archetype command - browserstack-sdk-archetype-integrate
+14:04:06.875 [main] INFO  c.b.launchers.LaunchMavenCommand - The maven properties for launcher are [archetypeVersion=1.5, archetypeGroupId=com.browserstack, archetypeArtifactId=browserstack-sdk-archetype-integrate, BROWSERSTACK_ACCESS_KEY=fzmWUBJ5QAsyiD5684Fq, groupId=com.browserstack, artifactId=java-archetype-integrate, BROWSERSTACK_USERNAME=raghavhimatsingk_lEOYsZ, BROWSERSTACK_FRAMEWORK=java, BUILD_NAME=Stagging build, version=1.0, PROJECT_NAME=Prodigy_Baby, BROWSERSTACK_SOURCE=java:eclipse:v1.0.10]
+14:04:06.888 [Worker-58: Launching mavenrun-8f40e87e-057b-4787-a6a8-2f23e890f56d] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+14:09:33.367 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+14:09:33.374 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+14:09:33.378 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+14:09:33.379 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+14:09:33.379 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+14:09:33.380 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+14:20:18.643 [Worker-70: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+14:20:18.652 [Worker-70: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+14:20:18.655 [Worker-70: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+14:20:18.655 [Worker-70: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.10}
+14:58:58.350 [Worker-75: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+14:58:58.401 [Worker-75: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+14:58:58.412 [Worker-75: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+14:58:58.413 [Worker-75: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.10}
+15:00:53.115 [Worker-80: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+15:00:53.120 [Worker-80: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+15:00:53.123 [Worker-80: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+15:00:53.124 [Worker-80: Launching ProdigyBaby_testng.regressionSuite.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.10}
+15:10:20.979 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+15:10:20.984 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+15:10:20.986 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/ProdigyBaby
+15:10:20.986 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+15:10:20.986 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+15:10:20.987 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/ProdigyBaby
+10:46:45.480 [Framework stop - Equinox Container: dec47870-6f87-43c7-8bb6-3b5bdb5b1db1] INFO  c.b.BrowserStackPluginActivator - Stopping BrowserStack Plugin...

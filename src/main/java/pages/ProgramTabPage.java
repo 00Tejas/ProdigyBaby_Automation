@@ -24,8 +24,22 @@ public class ProgramTabPage extends BasePage {
         waitForVisible(programIcon, 10);
         click(programIcon);
         
+        // Wait for program tab to load using dynamic wait
+        // Check for any program-related content to confirm tab loaded
+        try {
+            // Wait for either program content or explore button to appear
+            boolean loaded = isVisible(By.xpath(ProgramTabLocators.EXPLORE_ALL_PROGRAMS), 5) ||
+                           isVisible(By.xpath(ProgramTabLocators.TODAYS_PLAN), 5) ||
+                           isVisible(By.xpath(ProgramTabLocators.PROGRAM_CONTENT_SCROLL), 5);
+            if (!loaded) {
+                // Give a brief moment for page transition
+                Thread.sleep(500);
+            }
+        } catch (Exception e) {
+            // If elements not found, page might still be loading, continue
+        }
+        
         System.out.println("✅ Program tab clicked successfully");
-        Thread.sleep(2000); // Wait for program tab to load
     }
 
     /**
@@ -38,8 +52,34 @@ public class ProgramTabPage extends BasePage {
         waitForVisible(exploreAll, 10);
         click(exploreAll);
         
+        // Wait for navigation to complete - check for "Start Your Journey" text
+        // which appears after clicking Explore All Programs
+        try {
+            isVisible(By.xpath(ProgramTabLocators.START_YOUR_JOURNEY), 10);
+        } catch (Exception e) {
+            // If not found immediately, page might still be loading
+        }
+        
         System.out.println("✅ Explore All Programs button clicked successfully");
-        Thread.sleep(2000); // Wait for page to load
+    }
+
+    /**
+     * Check if "Explore All Programs" button is visible
+     */
+    public boolean isExploreAllProgramsVisible() {
+        try {
+            System.out.println("🔍 Checking for Explore All Programs button...");
+            
+            boolean visible = isVisible(By.xpath(ProgramTabLocators.EXPLORE_ALL_PROGRAMS), 5);
+            
+            if (visible) {
+                System.out.println("✅ Explore All Programs button is visible");
+                return true;
+            }
+        } catch (Exception e) {
+            System.out.println("❌ Explore All Programs button not visible: " + e.getMessage());
+        }
+        return false;
     }
 
     /**
@@ -100,25 +140,6 @@ public class ProgramTabPage extends BasePage {
     }
 
     /**
-     * Generic method to check element visibility by XPath
-     */
-    public boolean isElementVisible(String elementXPath, String elementName) {
-        try {
-            System.out.println("🔍 Checking for " + elementName + "...");
-            
-            boolean visible = isVisible(By.xpath(elementXPath), 5);
-            
-            if (visible) {
-                System.out.println("✅ " + elementName + " is visible");
-                return true;
-            }
-        } catch (Exception e) {
-            System.out.println("❌ " + elementName + " not visible: " + e.getMessage());
-        }
-        return false;
-    }
-
-    /**
      * Verify program tab is loaded
      */
     public boolean verifyProgramTabLoaded() {
@@ -129,30 +150,90 @@ public class ProgramTabPage extends BasePage {
      * Validates Program Tab UI based on user type
      */
     public void validateProgramTabUI(UserType userType) {
+        System.out.println("🔍 Validating Program Tab UI elements for " + userType + "...");
+        
         switch (userType) {
             case NEW_USER:
+                System.out.println("  ✓ Validating NEW_USER: Checking Explore All Programs button...");
+                boolean exploreAllVisible = isExploreAllProgramsVisible();
+                System.out.println(exploreAllVisible ? "  ✅ Explore All Programs button is visible" : "  ❌ Explore All Programs button not visible");
+                
+                if (exploreAllVisible) {
+                    System.out.println("  ✓ Clicking Explore All Programs button...");
+                    try {
+                        clickExploreAllPrograms();
+                        System.out.println("  ✅ Explore All Programs button clicked successfully");
+                    } catch (Exception e) {
+                        System.out.println("  ❌ Failed to click Explore All Programs button: " + e.getMessage());
+                    }
+                }
+                
+                System.out.println("  ✓ Validating NEW_USER: Checking Start Your Journey...");
+                boolean startJourneyVisible = isStartYourJourneyVisible();
+                System.out.println(startJourneyVisible ? "  ✅ Start Your Journey is visible - Validation PASSED" : "  ❌ Start Your Journey not visible - Validation FAILED");
+                break;
+                
             case LAUNCHPAD_USER:
-                clickSilently();
-                isStartYourJourneyVisible();
+                System.out.println("  ✓ Validating LAUNCHPAD_USER: Checking Start Your Journey...");
+                // For LAUNCHPAD_USER, Start Your Journey might need scrolling or waiting
+                // Try scrolling to find it if not immediately visible
+                boolean startJourneyVisibleLaunch = isStartYourJourneyVisible();
+                if (!startJourneyVisibleLaunch) {
+                    // Try scrolling to find the element
+                    scrollToElement(By.xpath(ProgramTabLocators.START_YOUR_JOURNEY), 3);
+                    startJourneyVisibleLaunch = isStartYourJourneyVisible();
+                }
+                System.out.println(startJourneyVisibleLaunch ? "  ✅ Start Your Journey is visible - Validation PASSED" : "  ❌ Start Your Journey not visible - Validation FAILED");
                 break;
+                
             case PROGRAM_USER:
+                System.out.println("  ✓ Validating PROGRAM_USER: Checking Today's Plan...");
+                // Wait a bit for content to load, then check
+                boolean todaysPlanVisible = isTodaysPlanVisible();
+                if (!todaysPlanVisible) {
+                    // Try scrolling to find Today's Plan
+                    scrollToElement(By.xpath(ProgramTabLocators.TODAYS_PLAN), 3);
+                    todaysPlanVisible = isTodaysPlanVisible();
+                }
+                System.out.println(todaysPlanVisible ? "  ✅ Today's Plan is visible - Validation PASSED" : "  ❌ Today's Plan not visible - Validation FAILED");
+                break;
+                
             case PROGRAM_SUBSCRIPTION_USER:
-                isTodaysPlanVisible();
+                System.out.println("  ✓ Validating PROGRAM_SUBSCRIPTION_USER: Checking Today's Plan...");
+                // Wait a bit for content to load, then check
+                boolean todaysPlanVisibleProgSub = isTodaysPlanVisible();
+                if (!todaysPlanVisibleProgSub) {
+                    // Try scrolling to find Today's Plan
+                    scrollToElement(By.xpath(ProgramTabLocators.TODAYS_PLAN), 3);
+                    todaysPlanVisibleProgSub = isTodaysPlanVisible();
+                }
+                System.out.println(todaysPlanVisibleProgSub ? "  ✅ Today's Plan is visible - Validation PASSED" : "  ❌ Today's Plan not visible - Validation FAILED");
                 break;
+                
             case SUBSCRIPTION_USER:
-                isProgramContentVisible();
+                System.out.println("  ✓ Validating SUBSCRIPTION_USER: Checking Explore All Programs button...");
+                boolean exploreAllVisibleSub = isExploreAllProgramsVisible();
+                System.out.println(exploreAllVisibleSub ? "  ✅ Explore All Programs button is visible" : "  ❌ Explore All Programs button not visible");
+                
+                if (exploreAllVisibleSub) {
+                    System.out.println("  ✓ Clicking Explore All Programs button...");
+                    try {
+                        clickExploreAllPrograms();
+                        System.out.println("  ✅ Explore All Programs button clicked successfully");
+                    } catch (Exception e) {
+                        System.out.println("  ❌ Failed to click Explore All Programs button: " + e.getMessage());
+                    }
+                }
+                
+                System.out.println("  ✓ Validating SUBSCRIPTION_USER: Checking Start Your Journey...");
+                boolean startJourneyVisibleSub = isStartYourJourneyVisible();
+                System.out.println(startJourneyVisibleSub ? "  ✅ Start Your Journey is visible - Validation PASSED" : "  ❌ Start Your Journey not visible - Validation FAILED");
                 break;
-            default:
-                isProgramContentVisible();
         }
+        
+        System.out.println("✅ Program Tab UI validation completed for " + userType);
     }
 
-    private void clickSilently() {
-        try {
-            // no-op: support flows that may require a click before visibility
-        } catch (Exception e) {
-        }
-    }
 }
 
 

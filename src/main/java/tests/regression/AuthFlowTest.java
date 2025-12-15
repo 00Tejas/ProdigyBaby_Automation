@@ -2,6 +2,7 @@
 
 import base.BaseTest;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import utils.CredentialsType;
@@ -12,6 +13,12 @@ public class AuthFlowTest extends BaseTest {
     @Test(dataProvider = "credentialData", dataProviderClass = DataProviderUtil.class,
           description = "Validate login with valid and invalid credentials")
     public void loginInputDomain(CredentialsType type, String email, String password) throws Exception {
+        System.out.println("\n===============================");
+        System.out.println("STARTING TEST: " + new Object(){}.getClass().getEnclosingMethod().getName());
+        System.out.println("===============================\n");
+        
+        Reporter.log("Executing test for user: " + email, true);
+        
         LoginPage login = new LoginPage(getDriver());
         login.performLogin(email, password);
 
@@ -28,5 +35,5 @@ public class AuthFlowTest extends BaseTest {
         }
     }
 }
-
+    
 

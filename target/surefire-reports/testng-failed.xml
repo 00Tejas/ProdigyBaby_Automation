@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Purchase After Onboarding Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Onboarding + Purchase(failed)" verbose="0">
+    <classes>
+      <class name="tests.regression.PurchaseAfterOnboardingTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="completeOnboardingThenOpenPurchase"/>
+        </methods>
+      </class> <!-- tests.regression.PurchaseAfterOnboardingTest -->
+    </classes>
+  </test> <!-- Onboarding + Purchase(failed) -->
+</suite> <!-- Failed suite [Purchase After Onboarding Suite] -->

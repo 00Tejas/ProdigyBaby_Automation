@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression Suite - BrowserStack]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Content Flow Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.regression.ContentFlowTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validateTabsPerUser" invocation-numbers="0 1 2 3 4"/>
+          <include name="resetAppAfterTest"/>
+        </methods>
+      </class> <!-- tests.regression.ContentFlowTest -->
+    </classes>
+  </test> <!-- Content Flow Test(failed) -->
+  <test thread-count="5" name="Auth Flow Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.regression.AuthFlowTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="resetAppAfterTest"/>
+          <include name="loginInputDomain" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- tests.regression.AuthFlowTest -->
+    </classes>
+  </test> <!-- Auth Flow Test(failed) -->
+</suite> <!-- Failed suite [Regression Suite - BrowserStack] -->

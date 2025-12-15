@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.prodigy.automation</groupId>
@@ -66,6 +63,20 @@
     <artifactId>logback-classic</artifactId>
     <version>1.4.11</version>
   </dependency>
+
+  <!-- BrowserStack Java SDK -->
+  <dependency>
+    <groupId>com.browserstack</groupId>
+    <artifactId>browserstack-java-sdk</artifactId>
+    <version>1.2.0</version>
+  </dependency>
+
+  <!-- YAML Parser for browserstack.yml -->
+  <dependency>
+    <groupId>org.yaml</groupId>
+    <artifactId>snakeyaml</artifactId>
+    <version>2.2</version>
+  </dependency>
 </dependencies>
 
   <!-- ✅ Repositories -->
@@ -121,7 +132,18 @@
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>3.6.1</version>
       </plugin>
+      <plugin>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.3.0</version>
+        <executions>
+          <execution>
+            <id>getClasspathFilenames</id>
+            <goals>
+              <goal>properties</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>
-

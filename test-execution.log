@@ -11,3 +11,11 @@
 2025-11-04 17:46:42.373 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   /Users/abcom/Documents/projects/ProdigyBaby/testng/regressionSuite.xml
 
+2025-11-07 18:50:46.480 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2025-11-07 18:50:46.927 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/abcom/Documents/projects/ProdigyBaby/testng/regressionSuite.xml
+
+2025-11-10 12:33:34.281 [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+2025-11-10 12:33:34.840 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/abcom/Documents/projects/ProdigyBaby/testng/regressionSuite.xml
+

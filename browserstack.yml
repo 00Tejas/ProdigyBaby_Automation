@@ -1,0 +1,19 @@
+userName: raghavhimatsingk_lEOYsZ
+accessKey: fzmWUBJ5QAsyiD5684Fq
+projectName: new prodigy baby
+buildName: Stagging_build
+framework: testng
+# Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
+# Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
+# Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
+# Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
+testObservability: true
+browserstackAutomation: true
+platforms:
+  - deviceName: "Google Pixel 7"
+    osVersion: "13.0"
+    app: "bs://90817c69c5098e3f5cbf37e47fe1fafdfb19f1cb"
+appiumVersion: "2.0"
+parallelsPerPlatform: 1
+
+source: java:eclipse:v1.0.10

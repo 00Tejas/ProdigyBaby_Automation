@@ -89,6 +89,6 @@ public class BasePage {
             } catch (Exception ignored) {}
         }
     }
-}
+} 
 
 

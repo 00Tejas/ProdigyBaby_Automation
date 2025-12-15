@@ -7,11 +7,11 @@ public class DataProviderUtil {
     @DataProvider(name = "userTypes")
     public static Object[][] userTypes() {
         return new Object[][]{
-            { UserType.NEW_USER },
-            { UserType.PROGRAM_USER },
-            { UserType.SUBSCRIPTION_USER },
-            { UserType.LAUNCHPAD_USER },
-            { UserType.PROGRAM_SUBSCRIPTION_USER }
+            { "newuser1@p.baby", "123456" },
+            { "program1@prodigy.baby", "123456" },
+            { "subscription1@p.baby", "123456" },
+            { "launchpad1@p.baby", "123456" },
+            { "proramsub1@prodigy.baby", "123456" }
         };
     }
 

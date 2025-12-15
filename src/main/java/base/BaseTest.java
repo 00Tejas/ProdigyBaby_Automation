@@ -2,6 +2,7 @@ package base;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.time.Duration;
@@ -15,6 +16,49 @@ import pages.LoginPage;
 
 public class BaseTest {
     protected AppiumDriver driver;
+
+    // BrowserStack App IDs
+    private static final String STAGING_APP_ID = "bs://733f52c656352c3763b7ac49554c3a03e4fbf937";
+    private static final String PRODUCTION_APP_ID = "bs://1b4e42b45d1c6f7a3a69bf5f4672520e53759f52";
+    
+    /**
+     * Check if running on BrowserStack
+     * @return true if runMode is "browserstack"
+     */
+    public static boolean isBrowserStack() {
+        return utils.RunMode.isBrowserStack();
+    }
+    
+    /**
+     * Check if running on local emulator
+     * @return true if runMode is "local"
+     */
+    public static boolean isLocal() {
+        return utils.RunMode.isLocal();
+    }
+
+    // Configuration flag for app environment
+    private static final String appEnvironment = System.getProperty("env", "staging");
+
+    /**
+     * Get BrowserStack App ID based on environment
+     * @return BrowserStack App ID (bs:// format)
+     */
+    public static String getBrowserStackAppId() {
+        if (appEnvironment.equalsIgnoreCase("prod")) {
+            return PRODUCTION_APP_ID;
+        } else {
+            return STAGING_APP_ID;
+        }
+    }
+
+    /**
+     * Get current app environment
+     * @return "staging" or "prod"
+     */
+    public static String getAppEnvironment() {
+        return appEnvironment;
+    }
 
     @BeforeMethod(alwaysRun = true)
     public void setUp(Method method) throws Exception {
@@ -30,19 +74,50 @@ public class BaseTest {
         }
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void tearDown(ITestResult result) {
-        if (result.getStatus() == ITestResult.FAILURE) {
-            System.out.println("❌ Test failed: " + result.getThrowable());
+    /**
+     * Marks BrowserStack session status (passed/failed)
+     * @param status "passed" or "failed"
+     * @param reason Reason for the status
+     */
+    public void markTestStatus(String status, String reason) {
+        if (driver != null) {
+            try {
+                JavascriptExecutor jse = (JavascriptExecutor) driver;
+                String script = "browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"" 
+                    + status + "\", \"reason\": \"" + reason + "\"}}";
+                jse.executeScript(script);
+                System.out.println("📊 BrowserStack status marked as: " + status + " - " + reason);
+            } catch (Exception e) {
+                System.out.println("⚠️ Failed to mark BrowserStack status: " + e.getMessage());
+            }
         }
-        DriverFactory.closeDriver();
     }
 
     @AfterMethod(alwaysRun = true)
-    public void resetAppAfterTest(ITestResult result) {
-        if (result.getStatus() == ITestResult.FAILURE) {
-            System.out.println("🔁 Resetting app after failure...");
-            DriverFactory.restartApp(driver);
+    public void tearDown(ITestResult result) {
+        // Mark BrowserStack session status based on test result
+        if (result.getStatus() == ITestResult.SUCCESS) {
+            markTestStatus("passed", "Test passed successfully");
+        } else if (result.getStatus() == ITestResult.FAILURE) {
+            String failureReason = "Test failed";
+            if (result.getThrowable() != null) {
+                failureReason = "Test failed: " + result.getThrowable().getMessage();
+                System.out.println("❌ Test failed: " + result.getThrowable());
+            }
+            markTestStatus("failed", failureReason);
+        } else {
+            markTestStatus("failed", "Test skipped or unknown status");
+        }
+
+        // Quit driver after marking status
+        if (driver != null) {
+            try {
+                driver.quit();
+                // Clear shared driver reference in DriverFactory
+                DriverFactory.setDriver(null);
+            } catch (Exception e) {
+                System.out.println("⚠️ Error quitting driver: " + e.getMessage());
+            }
         }
     }
 
@@ -120,6 +195,31 @@ public class BaseTest {
         }
     }
 
+    public void loginAs(String email, String password) throws Exception {
+        LoginPage loginPage = new LoginPage(driver);
+        // Perform complete login flow including all initial screens
+        loginPage.performLogin(email, password);
+    }
+
+    /**
+     * Helper method to get UserType from email address
+     * Used for validation methods that require UserType
+     */
+    protected utils.UserType getUserTypeFromEmail(String email) {
+        if (email.contains("proramsub")) {
+            return utils.UserType.PROGRAM_SUBSCRIPTION_USER;
+        } else if (email.contains("newuser")) {
+            return utils.UserType.NEW_USER;
+        } else if (email.contains("program")) {
+            return utils.UserType.PROGRAM_USER;
+        } else if (email.contains("subscription")) {
+            return utils.UserType.SUBSCRIPTION_USER;
+        } else if (email.contains("launchpad")) {
+            return utils.UserType.LAUNCHPAD_USER;
+        }
+        return utils.UserType.NEW_USER; // default fallback
+    }
+
     /**
      * Performs complete logout flow
      * Handles popups, navigates to profile, clicks logout button, and confirms logout
@@ -193,3 +293,4 @@ public class BaseTest {
         System.out.println("✅ Logout and login with different account completed successfully");
     }
 }
+  
