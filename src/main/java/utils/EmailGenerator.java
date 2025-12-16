@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -23,34 +22,50 @@ public class EmailGenerator {
      */
     public static String getUniqueEmail() {
         synchronized (lock) {
-            int counter = readCounter();
+            File counterFile = resolveCounterFile();
+            int counter = readCounter(counterFile);
             String email = String.format(EMAIL_PATTERN, counter);
-            writeCounter(counter + 1);
+            writeCounter(counterFile, counter + 1);
             return email;
         }
     }
     
     /**
+     * Resolve the counter file path consistently
+     * @return File object pointing to the counter file
+     */
+    private static File resolveCounterFile() {
+        // Try to get file from project root
+        File counterFile = new File(COUNTER_FILE_PATH);
+        
+        // If not found, try relative to current directory
+        if (!counterFile.exists()) {
+            String currentDir = System.getProperty("user.dir");
+            counterFile = new File(currentDir, COUNTER_FILE_PATH);
+        }
+        
+        // If still not found, try absolute path from resources
+        if (!counterFile.exists()) {
+            Path resourcePath = Paths.get(System.getProperty("user.dir"), "src", "test", "resources", "emailCounter.txt");
+            counterFile = resourcePath.toFile();
+        }
+        
+        // If file doesn't exist, ensure we use the standard location for creation
+        if (!counterFile.exists()) {
+            Path resourcePath = Paths.get(System.getProperty("user.dir"), "src", "test", "resources");
+            counterFile = new File(resourcePath.toFile(), "emailCounter.txt");
+        }
+        
+        return counterFile;
+    }
+    
+    /**
      * Read the current counter value from file
+     * @param counterFile The file to read from
      * @return Current counter value (defaults to 1 if file doesn't exist)
      */
-    private static int readCounter() {
+    private static int readCounter(File counterFile) {
         try {
-            // Try to get file from project root
-            File counterFile = new File(COUNTER_FILE_PATH);
-            
-            // If not found, try relative to current directory
-            if (!counterFile.exists()) {
-                String currentDir = System.getProperty("user.dir");
-                counterFile = new File(currentDir, COUNTER_FILE_PATH);
-            }
-            
-            // If still not found, try absolute path from resources
-            if (!counterFile.exists()) {
-                Path resourcePath = Paths.get(System.getProperty("user.dir"), "src", "test", "resources", "emailCounter.txt");
-                counterFile = resourcePath.toFile();
-            }
-            
             if (counterFile.exists() && counterFile.length() > 0) {
                 try (FileReader reader = new FileReader(counterFile)) {
                     StringBuilder content = new StringBuilder();
@@ -61,7 +76,7 @@ public class EmailGenerator {
                     String counterStr = content.toString().trim();
                     if (!counterStr.isEmpty()) {
                         int counter = Integer.parseInt(counterStr);
-                        System.out.println("📧 Read email counter from file: " + counter);
+                        System.out.println("📧 Read email counter: " + counter);
                         return counter;
                     }
                 }
@@ -76,26 +91,11 @@ public class EmailGenerator {
     
     /**
      * Write the counter value to file
+     * @param counterFile The file to write to
      * @param counter Counter value to write
      */
-    private static void writeCounter(int counter) {
+    private static void writeCounter(File counterFile, int counter) {
         try {
-            // Try to get file from project root
-            File counterFile = new File(COUNTER_FILE_PATH);
-            
-            // If not found, try relative to current directory
-            if (!counterFile.exists()) {
-                String currentDir = System.getProperty("user.dir");
-                counterFile = new File(currentDir, COUNTER_FILE_PATH);
-            }
-            
-            // If still not found, create directory structure
-            if (!counterFile.exists()) {
-                Path resourcePath = Paths.get(System.getProperty("user.dir"), "src", "test", "resources");
-                Files.createDirectories(resourcePath);
-                counterFile = new File(resourcePath.toFile(), "emailCounter.txt");
-            }
-            
             // Ensure parent directory exists
             if (counterFile.getParentFile() != null && !counterFile.getParentFile().exists()) {
                 counterFile.getParentFile().mkdirs();
