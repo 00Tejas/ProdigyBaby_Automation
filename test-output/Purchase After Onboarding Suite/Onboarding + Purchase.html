@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Onboarding + Purchase</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 10 15:10:10 IST 2025</td>
+<td>Started on:</td><td>Tue Dec 16 16:02:53 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>111 seconds (111241 ms)</td>
+<tr><td>Total time:</td><td>112 seconds (112530 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,17 +77,90 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.regression.PurchaseAfterOnboardingTest.completeOnboardingThenOpenPurchase()'><b>completeOnboardingThenOpenPurchase</b><br>Test class: tests.regression.PurchaseAfterOnboardingTest<br>Test method: Complete onboarding and open purchase/paywall flow<br/>
-<a href="#Output-796851467" onClick='toggleBox("Output-796851467", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1320248993" onClick='toggleBox("Output-1320248993", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-796851467" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-796851467">
+<a href="#Output-1320248993" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1320248993">
 Running onboarding + purchase test<br/>
-Using onboarding email: automationpurchase29@p.baby<br/>
+Using onboarding email: automationpurchase39@p.baby<br/>
 </div>
 </td>
-<td></td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;21.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [51ba21b4-af03-43a3-8a94-ce006c03e3ab, findElement {using=xpath, value=//L0.W/android.view.View/android.view.View/android.view.View[4]}]
+Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 51ba21b4-af03-43a3-8a94-ce006c03e3ab
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at base.BasePage.click(BasePage.java:23)
+	at pages.SubscriptionPage.clickPaywallContinue(SubscriptionPage.java:44)
+	at tests.regression.PurchaseAfterOnboardingTest.completeOnboardingThenOpenPurchase(PurchaseAfterOnboardingTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1320248993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1320248993'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;21.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [51ba21b4-af03-43a3-8a94-ce006c03e3ab, findElement {using=xpath, value=//L0.W/android.view.View/android.view.View/android.view.View[4]}]
+Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 51ba21b4-af03-43a3-8a94-ce006c03e3ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at base.BasePage.click(BasePage.java:23)
+	at pages.SubscriptionPage.clickPaywallContinue(SubscriptionPage.java:44)
+	at tests.regression.PurchaseAfterOnboardingTest.completeOnboardingThenOpenPurchase(PurchaseAfterOnboardingTest.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>102</td>
-<td>tests.regression.PurchaseAfterOnboardingTest@7966baa7</td></tr>
+<td>tests.regression.PurchaseAfterOnboardingTest@40dff0b7</td></tr>
 </table><p>
 </body>
 </html>

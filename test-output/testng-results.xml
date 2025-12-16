@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Running onboarding + purchase test]]>
@@ -8,12 +8,12 @@
       <![CDATA[Using onboarding email: automationpurchase39@p.baby]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-12-16T15:09:10 IST" name="Purchase After Onboarding Suite" finished-at="2025-12-16T15:11:05 IST" duration-ms="115443">
+  <suite started-at="2025-12-16T16:02:53 IST" name="Purchase After Onboarding Suite" finished-at="2025-12-16T16:04:45 IST" duration-ms="112530">
     <groups>
     </groups>
-    <test started-at="2025-12-16T15:09:10 IST" name="Onboarding + Purchase" finished-at="2025-12-16T15:11:05 IST" duration-ms="115443">
+    <test started-at="2025-12-16T16:02:53 IST" name="Onboarding + Purchase" finished-at="2025-12-16T16:04:45 IST" duration-ms="112530">
       <class name="tests.regression.PurchaseAfterOnboardingTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7]" started-at="2025-12-16T15:09:10 IST" name="setUp" finished-at="2025-12-16T15:09:19 IST" duration-ms="8863" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7]" started-at="2025-12-16T16:02:53 IST" name="setUp" finished-at="2025-12-16T16:03:03 IST" duration-ms="9668" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,7 +24,72 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="completeOnboardingThenOpenPurchase()[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7]" started-at="2025-12-16T15:09:19 IST" name="completeOnboardingThenOpenPurchase" description="Complete onboarding and open purchase/paywall flow" finished-at="2025-12-16T15:11:05 IST" duration-ms="105960" status="PASS">
+        <test-method signature="completeOnboardingThenOpenPurchase()[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7]" started-at="2025-12-16T16:03:03 IST" name="completeOnboardingThenOpenPurchase" description="Complete onboarding and open purchase/paywall flow" finished-at="2025-12-16T16:04:45 IST" duration-ms="102431" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [51ba21b4-af03-43a3-8a94-ce006c03e3ab, findElement {using=xpath, value=//L0.W/android.view.View/android.view.View/android.view.View[4]}]
+Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 51ba21b4-af03-43a3-8a94-ce006c03e3ab]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [51ba21b4-af03-43a3-8a94-ce006c03e3ab, findElement {using=xpath, value=//L0.W/android.view.View/android.view.View/android.view.View[4]}]
+Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 51ba21b4-af03-43a3-8a94-ce006c03e3ab
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at base.BasePage.click(BasePage.java:23)
+at pages.SubscriptionPage.clickPaywallContinue(SubscriptionPage.java:44)
+at tests.regression.PurchaseAfterOnboardingTest.completeOnboardingThenOpenPurchase(PurchaseAfterOnboardingTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Running onboarding + purchase test]]>
@@ -34,11 +99,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- completeOnboardingThenOpenPurchase -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7]" started-at="2025-12-16T15:11:05 IST" name="tearDown" finished-at="2025-12-16T15:11:05 IST" duration-ms="541" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7]" started-at="2025-12-16T16:04:45 IST" name="tearDown" finished-at="2025-12-16T16:04:45 IST" duration-ms="362" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=completeOnboardingThenOpenPurchase status=SUCCESS method=PurchaseAfterOnboardingTest.completeOnboardingThenOpenPurchase()[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7] output=Running onboarding + purchase test]]]>
+                <![CDATA[[TestResult name=completeOnboardingThenOpenPurchase status=FAILURE method=PurchaseAfterOnboardingTest.completeOnboardingThenOpenPurchase()[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7] output=Running onboarding + purchase test]]]>
               </value>
             </param>
           </params>

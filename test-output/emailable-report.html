@@ -9,10 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Purchase After Onboarding Suite</th></tr>
-<tr><td><a href="#t0">Onboarding + Purchase</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">115,443</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Onboarding + Purchase</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">112,530</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Purchase After Onboarding Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Onboarding + Purchase &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.regression.PurchaseAfterOnboardingTest</td><td><a href="#m0">completeOnboardingThenOpenPurchase</a></td><td rowspan="1">1765877959239</td><td rowspan="1">105960</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Purchase After Onboarding Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Onboarding + Purchase &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.regression.PurchaseAfterOnboardingTest</td><td><a href="#m0">completeOnboardingThenOpenPurchase</a></td><td rowspan="1">1765881183152</td><td rowspan="1">102431</td></tr></tbody>
 </table>
-<h2>Onboarding + Purchase</h2><h3 id="m0">tests.regression.PurchaseAfterOnboardingTest#completeOnboardingThenOpenPurchase</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Running onboarding + purchase test<br/>Using onboarding email: automationpurchase39@p.baby</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Onboarding + Purchase</h2><h3 id="m0">tests.regression.PurchaseAfterOnboardingTest#completeOnboardingThenOpenPurchase</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Running onboarding + purchase test<br/>Using onboarding email: automationpurchase39@p.baby</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;21.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [51ba21b4-af03-43a3-8a94-ce006c03e3ab, findElement {using=xpath, value=//L0.W/android.view.View/android.view.View/android.view.View[4]}]
+Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 51ba21b4-af03-43a3-8a94-ce006c03e3ab
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at base.BasePage.click(BasePage.java:23)
+	at pages.SubscriptionPage.clickPaywallContinue(SubscriptionPage.java:44)
+	at tests.regression.PurchaseAfterOnboardingTest.completeOnboardingThenOpenPurchase(PurchaseAfterOnboardingTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
