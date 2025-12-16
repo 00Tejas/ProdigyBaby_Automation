@@ -1,381 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="1" failed="4" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Executing test for user: launchpad1@p.baby]]>
+      <![CDATA[Running onboarding + purchase test]]>
     </line>
     <line>
-      <![CDATA[Executing test for user: newuser1@p.baby]]>
-    </line>
-    <line>
-      <![CDATA[Executing test for user: proramsub1@prodigy.baby]]>
-    </line>
-    <line>
-      <![CDATA[Executing test for user: program1@prodigy.baby]]>
-    </line>
-    <line>
-      <![CDATA[Executing test for user: subscription1@p.baby]]>
+      <![CDATA[Using onboarding email: automationpurchase39@p.baby]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-12-10T17:50:24 IST" name="Regression Suite" finished-at="2025-12-10T17:59:30 IST" duration-ms="545584">
+  <suite started-at="2025-12-16T15:09:10 IST" name="Purchase After Onboarding Suite" finished-at="2025-12-16T15:11:05 IST" duration-ms="115443">
     <groups>
     </groups>
-    <test started-at="2025-12-10T17:50:24 IST" name="Auth Flow Test" finished-at="2025-12-10T17:59:30 IST" duration-ms="545584">
-      <class name="tests.regression.CommunityTabTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:50:24 IST" name="setUp" finished-at="2025-12-10T17:50:31 IST" duration-ms="6707" status="PASS">
+    <test started-at="2025-12-16T15:09:10 IST" name="Onboarding + Purchase" finished-at="2025-12-16T15:11:05 IST" duration-ms="115443">
+      <class name="tests.regression.PurchaseAfterOnboardingTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7]" started-at="2025-12-16T15:09:10 IST" name="setUp" finished-at="2025-12-16T15:09:19 IST" duration-ms="8863" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.regression.CommunityTabTest.validateCommunityTab_LaunchpadUser() throws java.lang.Exception]]>
+                <![CDATA[public void tests.regression.PurchaseAfterOnboardingTest.completeOnboardingThenOpenPurchase() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateCommunityTab_LaunchpadUser()[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:50:31 IST" name="validateCommunityTab_LaunchpadUser" description="Validate Community Tab UI for Launchpad User" finished-at="2025-12-10T17:52:17 IST" duration-ms="105686" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[3] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 3d70dc12-9a2d-49b5-8808-fa979cb59f2b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[3] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 3d70dc12-9a2d-49b5-8808-fa979cb59f2b
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at base.BasePage.waitForVisible(BasePage.java:46)
-at pages.CommunityTabPage.clickCommunityTab(CommunityTabPage.java:25)
-at pages.CommunityTabPage.openCommunityTab(CommunityTabPage.java:50)
-at tests.regression.CommunityTabTest.runTest(CommunityTabTest.java:76)
-at tests.regression.CommunityTabTest.validateCommunityTab_LaunchpadUser(CommunityTabTest.java:50)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="completeOnboardingThenOpenPurchase()[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7]" started-at="2025-12-16T15:09:19 IST" name="completeOnboardingThenOpenPurchase" description="Complete onboarding and open purchase/paywall flow" finished-at="2025-12-16T15:11:05 IST" duration-ms="105960" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Executing test for user: launchpad1@p.baby]]>
+              <![CDATA[Running onboarding + purchase test]]>
+            </line>
+            <line>
+              <![CDATA[Using onboarding email: automationpurchase39@p.baby]]>
             </line>
           </reporter-output>
-        </test-method> <!-- validateCommunityTab_LaunchpadUser -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:52:17 IST" name="tearDown" finished-at="2025-12-10T17:52:17 IST" duration-ms="432" status="PASS">
+        </test-method> <!-- completeOnboardingThenOpenPurchase -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7]" started-at="2025-12-16T15:11:05 IST" name="tearDown" finished-at="2025-12-16T15:11:05 IST" duration-ms="541" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateCommunityTab_LaunchpadUser status=FAILURE method=CommunityTabTest.validateCommunityTab_LaunchpadUser()[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd] output=Executing test for user: launchpad1@p.baby]]]>
+                <![CDATA[[TestResult name=completeOnboardingThenOpenPurchase status=SUCCESS method=PurchaseAfterOnboardingTest.completeOnboardingThenOpenPurchase()[pri:0, instance:tests.regression.PurchaseAfterOnboardingTest@40dff0b7] output=Running onboarding + purchase test]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:52:17 IST" name="setUp" finished-at="2025-12-10T17:52:23 IST" duration-ms="5537" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.regression.CommunityTabTest.validateCommunityTab_NewUser() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateCommunityTab_NewUser()[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:52:23 IST" name="validateCommunityTab_NewUser" description="Validate Community Tab UI for New User" finished-at="2025-12-10T17:54:06 IST" duration-ms="103387" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[3] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a4a447fa-18db-44a2-a631-b04563fcc9d3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[3] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a4a447fa-18db-44a2-a631-b04563fcc9d3
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at base.BasePage.waitForVisible(BasePage.java:46)
-at pages.CommunityTabPage.clickCommunityTab(CommunityTabPage.java:25)
-at pages.CommunityTabPage.openCommunityTab(CommunityTabPage.java:50)
-at tests.regression.CommunityTabTest.runTest(CommunityTabTest.java:76)
-at tests.regression.CommunityTabTest.validateCommunityTab_NewUser(CommunityTabTest.java:23)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Executing test for user: newuser1@p.baby]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validateCommunityTab_NewUser -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:54:06 IST" name="tearDown" finished-at="2025-12-10T17:54:06 IST" duration-ms="319" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateCommunityTab_NewUser status=FAILURE method=CommunityTabTest.validateCommunityTab_NewUser()[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd] output=Executing test for user: newuser1@p.baby]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:54:06 IST" name="setUp" finished-at="2025-12-10T17:54:12 IST" duration-ms="5519" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.regression.CommunityTabTest.validateCommunityTab_ProgramSubscriptionUser() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateCommunityTab_ProgramSubscriptionUser()[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:54:12 IST" name="validateCommunityTab_ProgramSubscriptionUser" description="Validate Community Tab UI for Program Subscription User" finished-at="2025-12-10T17:55:53 IST" duration-ms="100736" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[3] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cc95720a-2756-4f61-b7c8-3189d4eac9b1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[3] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cc95720a-2756-4f61-b7c8-3189d4eac9b1
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at base.BasePage.waitForVisible(BasePage.java:46)
-at pages.CommunityTabPage.clickCommunityTab(CommunityTabPage.java:25)
-at pages.CommunityTabPage.openCommunityTab(CommunityTabPage.java:50)
-at tests.regression.CommunityTabTest.runTest(CommunityTabTest.java:76)
-at tests.regression.CommunityTabTest.validateCommunityTab_ProgramSubscriptionUser(CommunityTabTest.java:59)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Executing test for user: proramsub1@prodigy.baby]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validateCommunityTab_ProgramSubscriptionUser -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:55:53 IST" name="tearDown" finished-at="2025-12-10T17:55:53 IST" duration-ms="305" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateCommunityTab_ProgramSubscriptionUser status=FAILURE method=CommunityTabTest.validateCommunityTab_ProgramSubscriptionUser()[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd] output=Executing test for user: proramsub1@prodigy.baby]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:55:53 IST" name="setUp" finished-at="2025-12-10T17:55:58 IST" duration-ms="5511" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.regression.CommunityTabTest.validateCommunityTab_ProgramUser() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateCommunityTab_ProgramUser()[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:55:58 IST" name="validateCommunityTab_ProgramUser" description="Validate Community Tab UI for Program User" finished-at="2025-12-10T17:57:41 IST" duration-ms="102700" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[3] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 10d475ac-cb74-4159-be3e-32b2091a927e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[3] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:app: /Users/abcom/Downloads/Stag..., appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/abcom/Downloads/Stag..., appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 10d475ac-cb74-4159-be3e-32b2091a927e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at base.BasePage.waitForVisible(BasePage.java:46)
-at pages.CommunityTabPage.clickCommunityTab(CommunityTabPage.java:25)
-at pages.CommunityTabPage.openCommunityTab(CommunityTabPage.java:50)
-at tests.regression.CommunityTabTest.runTest(CommunityTabTest.java:76)
-at tests.regression.CommunityTabTest.validateCommunityTab_ProgramUser(CommunityTabTest.java:32)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Executing test for user: program1@prodigy.baby]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validateCommunityTab_ProgramUser -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:57:41 IST" name="tearDown" finished-at="2025-12-10T17:57:42 IST" duration-ms="385" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateCommunityTab_ProgramUser status=FAILURE method=CommunityTabTest.validateCommunityTab_ProgramUser()[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd] output=Executing test for user: program1@prodigy.baby]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:57:42 IST" name="setUp" finished-at="2025-12-10T17:57:47 IST" duration-ms="5450" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.regression.CommunityTabTest.validateCommunityTab_SubscriptionUser() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateCommunityTab_SubscriptionUser()[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:57:47 IST" name="validateCommunityTab_SubscriptionUser" description="Validate Community Tab UI for Subscription User" finished-at="2025-12-10T17:59:29 IST" duration-ms="102336" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Executing test for user: subscription1@p.baby]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validateCommunityTab_SubscriptionUser -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd]" started-at="2025-12-10T17:59:29 IST" name="tearDown" finished-at="2025-12-10T17:59:30 IST" duration-ms="396" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateCommunityTab_SubscriptionUser status=SUCCESS method=CommunityTabTest.validateCommunityTab_SubscriptionUser()[pri:0, instance:tests.regression.CommunityTabTest@61c9c3fd] output=Executing test for user: subscription1@p.baby]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.regression.CommunityTabTest -->
-    </test> <!-- Auth Flow Test -->
-  </suite> <!-- Regression Suite -->
+      </class> <!-- tests.regression.PurchaseAfterOnboardingTest -->
+    </test> <!-- Onboarding + Purchase -->
+  </suite> <!-- Purchase After Onboarding Suite -->
 </testng-results>
